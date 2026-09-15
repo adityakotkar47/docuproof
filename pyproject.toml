@@ -1,0 +1,38 @@
+[project]
+name = "docuproof"
+version = "0.1.0"
+description = "Hybrid-retrieval RAG over research papers with citation verification and dual-verifier answer auditing"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "faiss-cpu>=1.8",
+    "rank-bm25>=0.2.2",
+    "sentence-transformers>=3.0",
+    "torch>=2.3",
+    "openai>=1.40",
+    "pypdf>=4.0",
+    "gradio>=5.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.uv]
+# scripts are run from the repository root (uv run python app.py); the project itself is not built as a wheel
+package = false
+
+# CPU-only PyTorch on Linux (the default PyPI wheel pulls in gigabytes of CUDA libraries).
+# On Windows and macOS the default wheel is already CPU-only.
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
