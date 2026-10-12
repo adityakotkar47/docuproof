@@ -1,0 +1,132 @@
+[
+ {
+  "id": "n01",
+  "kind": "answerable",
+  "question": "What is the Transformer's main building block?"
+ },
+ {
+  "id": "n02",
+  "kind": "answerable",
+  "question": "How does a GAN work?"
+ },
+ {
+  "id": "n03",
+  "kind": "answerable",
+  "question": "What is LoRA?"
+ },
+ {
+  "id": "n04",
+  "kind": "answerable",
+  "question": "Explain the ReAct framework."
+ },
+ {
+  "id": "n05",
+  "kind": "answerable",
+  "question": "Why do language models hallucinate?"
+ },
+ {
+  "id": "n06",
+  "kind": "answerable",
+  "question": "What is chain of thought prompting?"
+ },
+ {
+  "id": "n07",
+  "kind": "answerable",
+  "question": "What does BERT stand for?"
+ },
+ {
+  "id": "n08",
+  "kind": "answerable",
+  "question": "How does latent diffusion save compute?"
+ },
+ {
+  "id": "n09",
+  "kind": "answerable",
+  "question": "What is the difference between a VAE and a GAN?"
+ },
+ {
+  "id": "n10",
+  "kind": "answerable",
+  "question": "What is Self-RAG?"
+ },
+ {
+  "id": "n11",
+  "kind": "answerable",
+  "question": "How is CLIP trained?"
+ },
+ {
+  "id": "n12",
+  "kind": "answerable",
+  "question": "What is RLHF?"
+ },
+ {
+  "id": "n13",
+  "kind": "answerable",
+  "question": "What is the lost in the middle problem?"
+ },
+ {
+  "id": "n14",
+  "kind": "answerable",
+  "question": "What does RAGAS measure?"
+ },
+ {
+  "id": "n15",
+  "kind": "answerable",
+  "question": "What is dense passage retrieval?"
+ },
+ {
+  "id": "n16",
+  "kind": "answerable",
+  "question": "How does Toolformer decide when to call a tool?"
+ },
+ {
+  "id": "n17",
+  "kind": "answerable",
+  "question": "What is the reparameterization trick?"
+ },
+ {
+  "id": "n18",
+  "kind": "answerable",
+  "question": "What is few-shot learning in GPT-3?"
+ },
+ {
+  "id": "n19",
+  "kind": "answerable",
+  "question": "What are the risks of foundation models?"
+ },
+ {
+  "id": "n20",
+  "kind": "answerable",
+  "question": "What does the discriminator do in a GAN?"
+ },
+ {
+  "id": "n21",
+  "kind": "unanswerable",
+  "question": "What is reciprocal rank fusion?"
+ },
+ {
+  "id": "n22",
+  "kind": "unanswerable",
+  "question": "What is the capital of France?"
+ },
+ {
+  "id": "n23",
+  "kind": "unanswerable",
+  "question": "Who won the cricket world cup?"
+ },
+ {
+  "id": "n24",
+  "kind": "unanswerable",
+  "question": "How do I cook rice?"
+ },
+ {
+  "id": "n25",
+  "kind": "unanswerable",
+  "question": "What is the weather today?"
+ },
+ {
+  "id": "n26",
+  "kind": "unanswerable",
+  "question": "Who invented the telephone?"
+ }
+]

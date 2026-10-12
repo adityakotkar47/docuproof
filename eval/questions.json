@@ -1,0 +1,1486 @@
+[
+ {
+  "kind": "single",
+  "question": "What range of scores does ChatGPT assign to the three quality dimensions in the GPT Score method?",
+  "targets": [
+   {
+    "source": "ragas",
+    "page": 5,
+    "phrase": "we ask ChatGPT to assign a score between 0 and 10 for the three quality dimensions"
+   }
+  ],
+  "id": "q001"
+ },
+ {
+  "kind": "single",
+  "question": "What percentage of the overall WIT data blend is represented by YFCC100M?",
+  "targets": [
+   {
+    "source": "clip",
+    "page": 45,
+    "phrase": "YFCC100M is only 3.7% of the overall WIT data blend"
+   }
+  ],
+  "id": "q002"
+ },
+ {
+  "kind": "single",
+  "question": "What are two common methods used to implement retrieval in open-domain QA?",
+  "targets": [
+   {
+    "source": "dpr",
+    "page": 1,
+    "phrase": "Retrieval in open-domain QA is usually implemented using TF-IDF or BM25"
+   }
+  ],
+  "id": "q003"
+ },
+ {
+  "kind": "single",
+  "question": "How many sequential operations does a recurrent layer require to connect positions?",
+  "targets": [
+   {
+    "source": "transformer",
+    "page": 6,
+    "phrase": "a recurrent layer requires O(n) sequential operations"
+   }
+  ],
+  "id": "q004"
+ },
+ {
+  "kind": "single",
+  "question": "What type of communication style is typical in Japan?",
+  "targets": [
+   {
+    "source": "llm_as_judge",
+    "page": 18,
+    "phrase": "Communication in Japan is typically indirect and reserved"
+   }
+  ],
+  "id": "q005"
+ },
+ {
+  "kind": "single",
+  "question": "How is the final faithfulness score F calculated?",
+  "targets": [
+   {
+    "source": "ragas",
+    "page": 3,
+    "phrase": "F = |V |S| , where |V | is the number of statements that were supported according to the LLM"
+   }
+  ],
+  "id": "q006"
+ },
+ {
+  "kind": "single",
+  "question": "What is the worst-case performance of GPT-3.5-Turbo on the key-value retrieval task without query-aware contextualization?",
+  "targets": [
+   {
+    "source": "lost_in_the_middle",
+    "page": 8,
+    "phrase": "without query-aware contextualization, the worst-case performance is 45.6% (Figure 7)."
+   }
+  ],
+  "id": "q007"
+ },
+ {
+  "kind": "single",
+  "question": "Who are the authors of the paper titled Auto-Encoding Variational Bayes?",
+  "targets": [
+   {
+    "source": "vae",
+    "page": 1,
+    "phrase": "Max Welling Machine Learning Group Universiteit van Amsterdam welling.max@gmail.com Diederik P. Kingma Machine Learning Group Universiteit van Amsterdam"
+   }
+  ],
+  "id": "q008"
+ },
+ {
+  "kind": "single",
+  "question": "What types of data modalities can be leveraged for foundation models in the educational domain?",
+  "targets": [
+   {
+    "source": "foundation_model_risks",
+    "page": 16,
+    "phrase": "textbooks, mathematical formula, diagrams, video-based tutorials) jointly offers hope for foundation models that are broadly applicable"
+   }
+  ],
+  "id": "q009"
+ },
+ {
+  "kind": "single",
+  "question": "How many transformer layers does BERT use compared to InferSent?",
+  "targets": [
+   {
+    "source": "sbert",
+    "page": 8,
+    "phrase": "InferSent uses a single BiLSTM layer, while BERT uses 12 stacked transformer layers."
+   }
+  ],
+  "id": "q010"
+ },
+ {
+  "kind": "single",
+  "question": "How many examples are typically required to achieve strong performance on a desired task when fine-tuning a language model?",
+  "targets": [
+   {
+    "source": "gpt3",
+    "page": 3,
+    "phrase": "fine-tuning on a dataset of thousands to hundreds of thousands of examples specific to that task"
+   }
+  ],
+  "id": "q011"
+ },
+ {
+  "kind": "single",
+  "question": "How many chains of thought from LaMDA 137B were analyzed in the GSM8K dataset?",
+  "targets": [
+   {
+    "source": "chain_of_thought",
+    "page": 25,
+    "phrase": "we analyze 50 chains of thought from LaMDA 137B that led to correct answers in the GSM8K dataset"
+   }
+  ],
+  "id": "q012"
+ },
+ {
+  "kind": "single",
+  "question": "Which specific tasks show the biggest performance improvements for BGE models in C-MTEB?",
+  "targets": [
+   {
+    "source": "bge",
+    "page": 6,
+    "phrase": "The biggest improvements are on the retrieval task followed by STS, pair classification, and re-ranking"
+   }
+  ],
+  "id": "q013"
+ },
+ {
+  "kind": "single",
+  "question": "What are two examples of alternative criteria for learning that do not approximate or bound the log-likelihood?",
+  "targets": [
+   {
+    "source": "gan",
+    "page": 2,
+    "phrase": "Alternative criteria that do not approximate or bound the log-likelihood have also been proposed, such as score matching [18] and noise-contrastive estimation (NCE) [13]"
+   }
+  ],
+  "id": "q014"
+ },
+ {
+  "kind": "single",
+  "question": "What are three examples of data types that deep learning models aim to represent as probability distributions?",
+  "targets": [
+   {
+    "source": "gan",
+    "page": 1,
+    "phrase": "natural images, audio waveforms containing speech, and symbols in natural language corpora"
+   }
+  ],
+  "id": "q015"
+ },
+ {
+  "kind": "single",
+  "question": "What does the 'Yes' label indicate in the context of the retrieval-on-demand reflection token?",
+  "targets": [
+   {
+    "source": "self_rag",
+    "page": 17,
+    "phrase": "Yes indicates retrieval is necessary. We additionally have continue to use evidence, which indicates that a model can continue to use the evidence retrieved previously."
+   }
+  ],
+  "id": "q016"
+ },
+ {
+  "kind": "single",
+  "question": "How much CPU memory is required to store document index vectors for all of Wikipedia?",
+  "targets": [
+   {
+    "source": "rag",
+    "page": 17,
+    "phrase": "requiring ∼ 100 GB of CPU memory for all of Wikipedia."
+   }
+  ],
+  "id": "q017"
+ },
+ {
+  "kind": "single",
+  "question": "How many datasets does MTEB integrate for the evaluation of text embeddings?",
+  "targets": [
+   {
+    "source": "bge",
+    "page": 2,
+    "phrase": "It integrates 56 datasets, where all important capabilities of text embeddings, like retrieval, ranking, clustering, etc., can be jointly evaluated."
+   }
+  ],
+  "id": "q018"
+ },
+ {
+  "kind": "single",
+  "question": "What is the learning rate used for the BitFit method in the GPT-3 adaptation experiments?",
+  "targets": [
+   {
+    "source": "lora",
+    "page": 21,
+    "phrase": "BitFit AdapterH LoRA 1.00E-04 2.00E-04 AdamW 250,000 Linear 5.00E-06 5.00E-04 1.00E-04 1.6E-03"
+   }
+  ],
+  "id": "q019"
+ },
+ {
+  "kind": "single",
+  "question": "What percentage of incorrect chains of thought on GSM8K were attributed solely to calculator errors?",
+  "targets": [
+   {
+    "source": "chain_of_thought",
+    "page": 27,
+    "phrase": "We found that 8% of the chains of thought were completely correct except for a calculator error"
+   }
+  ],
+  "id": "q020"
+ },
+ {
+  "kind": "single",
+  "question": "Which organization provided the computing resources used to train and evaluate the language models?",
+  "targets": [
+   {
+    "source": "self_rag",
+    "page": 11,
+    "phrase": "We thank Stability AI for providing computing to train and evaluate the LMs in this work"
+   }
+  ],
+  "id": "q021"
+ },
+ {
+  "kind": "single",
+  "question": "What specific paradigm was used to assess human preference scores in the user study?",
+  "targets": [
+   {
+    "source": "latent_diffusion",
+    "page": 27,
+    "phrase": "use the 2-alternative force-choice paradigm to assess human preference scores for two distinct tasks"
+   }
+  ],
+  "id": "q022"
+ },
+ {
+  "kind": "single",
+  "question": "What is the specific threshold value used to filter text pairs based on their semantic relation score?",
+  "targets": [
+   {
+    "source": "bge",
+    "page": 5,
+    "phrase": "We empirically choose a threshold of 0.43, and drop the samples whose scores are below the threshold"
+   }
+  ],
+  "id": "q023"
+ },
+ {
+  "kind": "single",
+  "question": "What percentage of cases resulted in the model citing adversarial documents when they were injected into random documents?",
+  "targets": [
+   {
+    "source": "correctness_not_faithfulness",
+    "page": 11,
+    "phrase": "the model cited these documents in 12% (116/936) cases"
+   }
+  ],
+  "id": "q024"
+ },
+ {
+  "kind": "single",
+  "question": "What does high effective robustness seem to result from according to the experiments?",
+  "targets": [
+   {
+    "source": "clip",
+    "page": 16,
+    "phrase": "high effective robustness seems to result from minimizing the amount of distribution specific training data"
+   }
+  ],
+  "id": "q025"
+ },
+ {
+  "kind": "single",
+  "question": "What criteria are used to filter out answer candidates for TriviaQA?",
+  "targets": [
+   {
+    "source": "rag",
+    "page": 18,
+    "phrase": "we filter out answer candidates if they do not occur in top 1000 documents for the query"
+   }
+  ],
+  "id": "q026"
+ },
+ {
+  "kind": "single",
+  "question": "What score did BERTLARGE achieve on the official GLUE leaderboard?",
+  "targets": [
+   {
+    "source": "bert",
+    "page": 6,
+    "phrase": "BERTLARGE obtains a score of 80.5, compared to OpenAI GPT, which obtains 72.8"
+   }
+  ],
+  "id": "q027"
+ },
+ {
+  "kind": "single",
+  "question": "Which model demonstrates the power of in-context learning without parameter optimization?",
+  "targets": [
+   {
+    "source": "foundation_model_risks",
+    "page": 121,
+    "phrase": "GPT-3 [Brown et al. 2020] demonstrates the power of in-context learning, an adaptation method that does not need any parameter optimization"
+   }
+  ],
+  "id": "q028"
+ },
+ {
+  "kind": "single",
+  "question": "What are some examples of language models with larger context windows?",
+  "targets": [
+   {
+    "source": "lost_in_the_middle",
+    "page": 2,
+    "phrase": "language models with larger context windows (e.g., 4096, 32K, and even 100K tokens)"
+   }
+  ],
+  "id": "q029"
+ },
+ {
+  "kind": "single",
+  "question": "What is the computational complexity of separable convolutions?",
+  "targets": [
+   {
+    "source": "transformer",
+    "page": 7,
+    "phrase": "Separable convolutions [6], however, decrease the complexity considerably, to O(k · n · d + n · d2 )"
+   }
+  ],
+  "id": "q030"
+ },
+ {
+  "kind": "single",
+  "question": "What retrieval system is used to collect distractor documents for the NaturalQuestions dataset?",
+  "targets": [
+   {
+    "source": "lost_in_the_middle",
+    "page": 3,
+    "phrase": "a retrieval system (Contriever, fine-tuned on MS-MARCO; Izacard et al., 2021) to retrieve the k − 1 Wikipedia chunks"
+   }
+  ],
+  "id": "q031"
+ },
+ {
+  "kind": "single",
+  "question": "What is the effective batch size used for training?",
+  "targets": [
+   {
+    "source": "llama2",
+    "page": 12,
+    "phrase": "The effective batch size is kept fixed at 512 pairs, or 1024 rows per batch."
+   }
+  ],
+  "id": "q032"
+ },
+ {
+  "kind": "single",
+  "question": "Which religious ideology group shows the largest increase in sentiment scores after fine-tuning?",
+  "targets": [
+   {
+    "source": "llama2",
+    "page": 70,
+    "phrase": "the demographic groups of Islam and Sikhism tend to have the largest increase in the sentiment scores"
+   }
+  ],
+  "id": "q033"
+ },
+ {
+  "kind": "single",
+  "question": "What objective do VQGANs employ in their first stage to scale autoregressive transformers to larger images?",
+  "targets": [
+   {
+    "source": "latent_diffusion",
+    "page": 3,
+    "phrase": "VQGANs [23, 103] employ a first stage with an adversarial and perceptual objective to scale autoregressive transformers"
+   }
+  ],
+  "id": "q034"
+ },
+ {
+  "kind": "single",
+  "question": "What is the token size of the text chunks used to identify non-English language segments?",
+  "targets": [
+   {
+    "source": "toolformer",
+    "page": 15,
+    "phrase": "We use text chunks of size 10 tokens."
+   }
+  ],
+  "id": "q035"
+ },
+ {
+  "kind": "single",
+  "question": "What is the maximum similarity value between the top 4 directions in ∆W and the top-10% of those in W?",
+  "targets": [
+   {
+    "source": "lora",
+    "page": 24,
+    "phrase": "the similarity between the top 4 directions in ∆W and the top-10% of those in W barely exceeds 0.2"
+   }
+  ],
+  "id": "q036"
+ },
+ {
+  "kind": "single",
+  "question": "What is the current legal status of foundation models?",
+  "targets": [
+   {
+    "source": "foundation_model_risks",
+    "page": 20,
+    "phrase": "Foundation models rest on tenuous legal footings at present; how the law bears on both the development and use of these models is largely unclear."
+   }
+  ],
+  "id": "q037"
+ },
+ {
+  "kind": "single",
+  "question": "What type of models are widely used and achieve state-of-the-art performance in abstractive summarization?",
+  "targets": [
+   {
+    "source": "hallucination_survey",
+    "page": 19,
+    "phrase": "Seq-to-seq [244] models are widely used and achieve state-of-the-art performance in abstractive summarization."
+   }
+  ],
+  "id": "q038"
+ },
+ {
+  "kind": "single",
+  "question": "What phrase are models instructed to use when they are not certain of the correct answer in the TruthfulQA dataset?",
+  "targets": [
+   {
+    "source": "instructgpt",
+    "page": 13,
+    "phrase": "instructs the model to respond with “I have no comment” when it is not certain of the correct answer."
+   }
+  ],
+  "id": "q039"
+ },
+ {
+  "kind": "single",
+  "question": "What is the name of the novel estimator introduced for efficient approximate inference with continuous latent variables?",
+  "targets": [
+   {
+    "source": "vae",
+    "page": 8,
+    "phrase": "We have introduced a novel estimator of the variational lower bound, Stochastic Gradient VB (SGVB), for efficient approximate inference"
+   }
+  ],
+  "id": "q040"
+ },
+ {
+  "kind": "single",
+  "question": "What specific types of noise and artifacts are included in the BSR-degradation process?",
+  "targets": [
+   {
+    "source": "latent_diffusion",
+    "page": 23,
+    "phrase": "applies JPEG compressions noise, camera sensor noise, different image interpolations for downsampling, Gaussian blur kernels and Gaussian noise"
+   }
+  ],
+  "id": "q041"
+ },
+ {
+  "kind": "single",
+  "question": "What capability does CLIP introduce that allows users to categorize images without re-training?",
+  "targets": [
+   {
+    "source": "clip",
+    "page": 20,
+    "phrase": "CLIP makes it possible to easily create your own classes for categorization (to ‘roll your own classifier’) without a need for re-training."
+   }
+  ],
+  "id": "q042"
+ },
+ {
+  "kind": "single",
+  "question": "What are the two steps in the BERT framework?",
+  "targets": [
+   {
+    "source": "bert",
+    "page": 3,
+    "phrase": "There are two steps in our framework: pre-training and fine-tuning."
+   }
+  ],
+  "id": "q043"
+ },
+ {
+  "kind": "single",
+  "question": "What potential benefit do diffusion models offer regarding internet accessibility?",
+  "targets": [
+   {
+    "source": "ddpm",
+    "page": 9,
+    "phrase": "diffusion models may be useful for data compression, which, as data becomes higher resolution and as global internet traffic increases"
+   }
+  ],
+  "id": "q044"
+ },
+ {
+  "kind": "single",
+  "question": "What percentage of examples in the DATESET dataset does Toolformer use the calendar tool for?",
+  "targets": [
+   {
+    "source": "toolformer",
+    "page": 8,
+    "phrase": "which it makes use of for 54.8% of all examples."
+   }
+  ],
+  "id": "q045"
+ },
+ {
+  "kind": "single",
+  "question": "What is the name of the trilemma described in the example regarding the capital of Germany?",
+  "targets": [
+   {
+    "source": "correctness_not_faithfulness",
+    "page": 8,
+    "phrase": "Example 3: The Faithfulness Post-rationalization Correctness Trilemma"
+   }
+  ],
+  "id": "q046"
+ },
+ {
+  "kind": "single",
+  "question": "Which Python function was used to perform the two-sample t-test for independent groups?",
+  "targets": [
+   {
+    "source": "gpt3",
+    "page": 47,
+    "phrase": "This was implemented in Python using the scipy.stats.ttest_ind function."
+   }
+  ],
+  "id": "q047"
+ },
+ {
+  "kind": "single",
+  "question": "What is the origin of the spacecraft Soyuz?",
+  "targets": [
+   {
+    "source": "react",
+    "page": 26,
+    "phrase": "Soyuz is a Russian spacecraft."
+   }
+  ],
+  "id": "q048"
+ },
+ {
+  "kind": "single",
+  "question": "What does the acronym REAG stand for in the context of the Rationale-Enriched Answer Generator?",
+  "targets": [
+   {
+    "source": "hallucination_survey",
+    "page": 26,
+    "phrase": "Li et al. [141] propose Rationale-Enriched Answer Generator (REAG)"
+   }
+  ],
+  "id": "q049"
+ },
+ {
+  "kind": "single",
+  "question": "What is the typical nature of communication in Japan?",
+  "targets": [
+   {
+    "source": "llm_as_judge",
+    "page": 18,
+    "phrase": "Communication in Japan is typically indirect and reserved."
+   }
+  ],
+  "id": "q050"
+ },
+ {
+  "kind": "single",
+  "question": "What is considered the most successful method for hallucination mitigation in NMT?",
+  "targets": [
+   {
+    "source": "hallucination_survey",
+    "page": 32,
+    "phrase": "perturbation, where the insertions of most common tokens are placed at the beginning of the sentence, seems to be the most successful"
+   }
+  ],
+  "id": "q051"
+ },
+ {
+  "kind": "single",
+  "question": "Which benchmark is a collection of standardized exams in different subjects?",
+  "targets": [
+   {
+    "source": "llama2",
+    "page": 48,
+    "phrase": "AGI Eval is a collection of standardized exams in different subjects."
+   }
+  ],
+  "id": "q052"
+ },
+ {
+  "kind": "single",
+  "question": "In which two domains have retrieve-and-edit approaches proven successful?",
+  "targets": [
+   {
+    "source": "rag",
+    "page": 9,
+    "phrase": "These approaches have proved successful in a number of domains including Machine Translation [18, 22] and Semantic Parsing [21]."
+   }
+  ],
+  "id": "q053"
+ },
+ {
+  "kind": "single",
+  "question": "On which three datasets were the ablation studies conducted?",
+  "targets": [
+   {
+    "source": "self_rag",
+    "page": 9,
+    "phrase": "We conduct the ablation studies on three datasets, PopQA, PubHealth, and ASQA."
+   }
+  ],
+  "id": "q054"
+ },
+ {
+  "kind": "single",
+  "question": "What is the criterion for discarding a question when using BM25 for passage retrieval?",
+  "targets": [
+   {
+    "source": "dpr",
+    "page": 4,
+    "phrase": "If none of the top 100 retrieved passages has the answer, the question will be discarded."
+   }
+  ],
+  "id": "q055"
+ },
+ {
+  "kind": "single",
+  "question": "Which specific AI models were compared in the multi-turn dialogue example?",
+  "targets": [
+   {
+    "source": "llm_as_judge",
+    "page": 2,
+    "phrase": "LLaMA-13B (Assistant A) and Vicuna-13B (Assistant B)—initiated by a question from the MMLU benchmark"
+   }
+  ],
+  "id": "q056"
+ },
+ {
+  "kind": "single",
+  "question": "How can a conditional generative model p(x | c) be obtained within the adversarial framework?",
+  "targets": [
+   {
+    "source": "gan",
+    "page": 7,
+    "phrase": "A conditional generative model p(x | c) can be obtained by adding c as input to both G and D."
+   }
+  ],
+  "id": "q057"
+ },
+ {
+  "kind": "single",
+  "question": "What happens to the model's performance when instructions contain multiple explicit constraints?",
+  "targets": [
+   {
+    "source": "instructgpt",
+    "page": 16,
+    "phrase": "the model’s performance degrades when instructions contain multiple explicit constraints (e.g. “list 10 movies made in the 1930’s set in France”)"
+   }
+  ],
+  "id": "q058"
+ },
+ {
+  "kind": "single",
+  "question": "What is the prior over the latent variables in the Variational Auto-Encoder example?",
+  "targets": [
+   {
+    "source": "vae",
+    "page": 5,
+    "phrase": "Let the prior over the latent variables be the centered isotropic multivariate Gaussian pθ (z) = N (z; 0, I)."
+   }
+  ],
+  "id": "q059"
+ },
+ {
+  "kind": "single",
+  "question": "What is the parameter size of the PPO-ptx model mentioned?",
+  "targets": [
+   {
+    "source": "instructgpt",
+    "page": 16,
+    "phrase": "Our 175B PPO-ptx model is able to reliably answers questions about code"
+   }
+  ],
+  "id": "q060"
+ },
+ {
+  "kind": "single",
+  "question": "How many in-context examples does ReAct use to learn?",
+  "targets": [
+   {
+    "source": "react",
+    "page": 4,
+    "phrase": "learning solely from one to six in-context examples, consistently outperforming baselines"
+   }
+  ],
+  "id": "q061"
+ },
+ {
+  "kind": "single",
+  "question": "What is the maximum number of special tokens for prefix-layer tuning before a performance drop is observed?",
+  "targets": [
+   {
+    "source": "lora",
+    "page": 8,
+    "phrase": "more than 32 special tokens for prefix-layer tuning. This corroborates similar observations"
+   }
+  ],
+  "id": "q062"
+ },
+ {
+  "kind": "single",
+  "question": "What happens to the model quality when the attention key size is reduced?",
+  "targets": [
+   {
+    "source": "transformer",
+    "page": 9,
+    "phrase": "we observe that reducing the attention key size dk hurts model quality"
+   }
+  ],
+  "id": "q063"
+ },
+ {
+  "kind": "single",
+  "question": "Who directed the 1989 documentary film Adam Clayton Powell?",
+  "targets": [
+   {
+    "source": "react",
+    "page": 18,
+    "phrase": "Adam Clayton Powell is a 1989 American documentary film directed by Richard Kilberg"
+   }
+  ],
+  "id": "q064"
+ },
+ {
+  "kind": "single",
+  "question": "What specific architecture does NCSN use for its model?",
+  "targets": [
+   {
+    "source": "ddpm",
+    "page": 15,
+    "phrase": "NCSN uses a RefineNet with dilated convolutions"
+   }
+  ],
+  "id": "q065"
+ },
+ {
+  "kind": "single",
+  "question": "What do organisms require energy to do according to the OpenBookQA example?",
+  "targets": [
+   {
+    "source": "gpt3",
+    "page": 53,
+    "phrase": "Organisms require energy in order to do what? mature and develop."
+   }
+  ],
+  "id": "q066"
+ },
+ {
+  "kind": "single",
+  "question": "Which dataset is SBERT significantly worse at than the Universal Sentence Encoder?",
+  "targets": [
+   {
+    "source": "sbert",
+    "page": 7,
+    "phrase": "The only dataset where SBERT is significantly worse than Universal Sentence Encoder is the TREC dataset."
+   }
+  ],
+  "id": "q067"
+ },
+ {
+  "kind": "single",
+  "question": "How many questions per second does BM25/Lucene process per CPU thread?",
+  "targets": [
+   {
+    "source": "dpr",
+    "page": 7,
+    "phrase": "BM25/Lucene (implemented in Java, using file index) processes 23.7 questions per second per CPU thread."
+   }
+  ],
+  "id": "q068"
+ },
+ {
+  "kind": "single",
+  "question": "What is the observed performance drop of SBERT in the cross-topic evaluation?",
+  "targets": [
+   {
+    "source": "sbert",
+    "page": 5,
+    "phrase": "we observe a performance drop of SBERT by about 7 points Spearman correlation."
+   }
+  ],
+  "id": "q069"
+ },
+ {
+  "kind": "single",
+  "question": "What is the name of the framework presented for the automated assessment of retrieval-augmented systems?",
+  "targets": [
+   {
+    "source": "ragas",
+    "page": 1,
+    "phrase": "in this paper we present Ragas1 , a framework for the automated assessment"
+   }
+  ],
+  "id": "q070"
+ },
+ {
+  "kind": "single",
+  "question": "What is a specific method mentioned for how a model might look for support in documents during post-rationalization?",
+  "targets": [
+   {
+    "source": "correctness_not_faithfulness",
+    "page": 8,
+    "phrase": "the model looks for support in the documents in some shallow way (e.g., by token-matching)"
+   }
+  ],
+  "id": "q071"
+ },
+ {
+  "kind": "single",
+  "question": "What type of decoding method is used for Toolformer?",
+  "targets": [
+   {
+    "source": "toolformer",
+    "page": 5,
+    "phrase": "We use standard greedy decoding, but with one modification for Toolformer"
+   }
+  ],
+  "id": "q072"
+ },
+ {
+  "kind": "single",
+  "question": "How many datasets are considered for commonsense reasoning?",
+  "targets": [
+   {
+    "source": "chain_of_thought",
+    "page": 7,
+    "phrase": "We consider five datasets covering a diverse range of commonsense reasoning types."
+   }
+  ],
+  "id": "q073"
+ },
+ {
+  "kind": "single",
+  "question": "What is the rate of the CIFAR10 model with the highest quality samples?",
+  "targets": [
+   {
+    "source": "ddpm",
+    "page": 6,
+    "phrase": "our CIFAR10 model with the highest quality samples has a rate of 1.78 bits/dim"
+   }
+  ],
+  "id": "q074"
+ },
+ {
+  "kind": "multi",
+  "question": "Which datasets were used to evaluate the performance of both the adversarial nets and the generative models described in the respective studies?",
+  "targets": [
+   {
+    "source": "gan",
+    "page": 5,
+    "phrase": "We trained adversarial nets an a range of datasets including MNIST[23], the Toronto Face Database (TFD) [28], and CIFAR-10 [21]"
+   },
+   {
+    "source": "vae",
+    "page": 6,
+    "phrase": "We trained generative models of images from the MNIST and Frey Face datasets3"
+   }
+  ],
+  "id": "q075"
+ },
+ {
+  "kind": "multi",
+  "question": "How do the approaches described in the two texts differ regarding the use of simplifying assumptions and the handling of intractable probability distributions?",
+  "targets": [
+   {
+    "source": "gan",
+    "page": 3,
+    "phrase": "The results of this section are done in a nonparametric setting, e.g. we represent a model with infinite capacity"
+   },
+   {
+    "source": "vae",
+    "page": 2,
+    "phrase": "we do not make the common simplifying assumptions about the marginal or posterior probabilities"
+   }
+  ],
+  "id": "q076"
+ },
+ {
+  "kind": "multi",
+  "question": "How does the approach to modeling the diffusion process in latent space differ from traditional diffusion models that operate directly on pixel space?",
+  "targets": [
+   {
+    "source": "ddpm",
+    "page": 2,
+    "phrase": "A diffusion probabilistic model (which we will call a “diffusion model” for brevity) is a parameterized Markov chain trained using variational inference to produce samples matching the data after finite time."
+   },
+   {
+    "source": "latent_diffusion",
+    "page": 4,
+    "phrase": "Because our subsequent DM is designed to work with the two-dimensional structure of our learned latent space z = E(x), we can use relatively mild compression rates and achieve very good reconstructions."
+   }
+  ],
+  "id": "q077"
+ },
+ {
+  "kind": "multi",
+  "question": "How do generative models and deep learning modules relate to the issue of bias in training data?",
+  "targets": [
+   {
+    "source": "ddpm",
+    "page": 9,
+    "phrase": "Generative models also reflect the biases in the datasets on which they are trained"
+   },
+   {
+    "source": "latent_diffusion",
+    "page": 9,
+    "phrase": "deep learning modules tend to reproduce or exacerbate biases that are already present in the data"
+   }
+  ],
+  "id": "q078"
+ },
+ {
+  "kind": "multi",
+  "question": "How does the Self-RAG framework address the limitations of the standard Retrieval-Augmented Generation approach regarding the indiscriminate use of retrieved information?",
+  "targets": [
+   {
+    "source": "rag",
+    "page": 5,
+    "phrase": "RAG combines the generation flexibility of the “closed-book” (parametric only) approaches and the performance of \"open-book\" retrieval-based approaches"
+   },
+   {
+    "source": "self_rag",
+    "page": 1,
+    "phrase": "indiscriminately retrieving and incorporating a fixed number of retrieved passages, regardless of whether retrieval is necessary, or passages are relevant, diminishes LM versatility"
+   }
+  ],
+  "id": "q079"
+ },
+ {
+  "kind": "multi",
+  "question": "How does the reliance on parametric knowledge for title completion in language models compare to the strategy of using adaptive retrieval to ensure factual accuracy in generation tasks?",
+  "targets": [
+   {
+    "source": "rag",
+    "page": 6,
+    "phrase": "the model’s parametric knowledge is sufficient to complete the titles"
+   },
+   {
+    "source": "self_rag",
+    "page": 6,
+    "phrase": "we aim for the model to retrieve passages more frequently to ensure that the output aligns closely with the available evidence"
+   }
+  ],
+  "id": "q080"
+ },
+ {
+  "kind": "multi",
+  "question": "How does the use of the Wikipedia search engine API in ReAct compare to its usage in models that require a minimum parameter threshold to effectively leverage tools?",
+  "targets": [
+   {
+    "source": "react",
+    "page": 4,
+    "phrase": "by interacting with a Wikipedia API, ReAct is able to retrieve information to support reasoning"
+   },
+   {
+    "source": "toolformer",
+    "page": 8,
+    "phrase": "the Wikipedia search engine used mostly for QA benchmarks; we hypothesize that this is because the API is comparably easy to use"
+   }
+  ],
+  "id": "q081"
+ },
+ {
+  "kind": "multi",
+  "question": "How does the zero-shot approach to tool use in autonomous systems differ from methods that rely on providing specific examples of how to solve a task?",
+  "targets": [
+   {
+    "source": "react",
+    "page": 1,
+    "phrase": "Recent results have hinted at the possibility of combining verbal reasoning with interactive decision making in autonomous systems"
+   },
+   {
+    "source": "toolformer",
+    "page": 5,
+    "phrase": "models are instructed to solve each task in natural language, but we do not provide any in-context examples"
+   }
+  ],
+  "id": "q082"
+ },
+ {
+  "kind": "multi",
+  "question": "How do the training approaches for BERT and GPT-3 differ in terms of their focus on pre-training steps versus model parameter scaling?",
+  "targets": [
+   {
+    "source": "bert",
+    "page": 16,
+    "phrase": "BERTBASE achieves almost 1.0% additional accuracy on MNLI when trained on 1M steps compared to 500k steps"
+   },
+   {
+    "source": "gpt3",
+    "page": 8,
+    "phrase": "train 8 different sizes of model, ranging over three orders of magnitude from 125 million parameters to 175 billion parameters"
+   }
+  ],
+  "id": "q083"
+ },
+ {
+  "kind": "multi",
+  "question": "How do the computational benefits of using fixed features from a pretrained model compare to the focus on autoregressive language models for downstream task performance?",
+  "targets": [
+   {
+    "source": "bert",
+    "page": 9,
+    "phrase": "there are major computational benefits to pre-compute an expensive representation of the training data once"
+   },
+   {
+    "source": "gpt3",
+    "page": 40,
+    "phrase": "Many of these techniques provide significant gains on downstream tasks. In this work we continue to focus on pure autoregressive language models"
+   }
+  ],
+  "id": "q084"
+ },
+ {
+  "kind": "multi",
+  "question": "How do the parameter counts for prefix-layer tuning and the training data volumes for FLAN and T0 models compare in terms of their respective scaling factors?",
+  "targets": [
+   {
+    "source": "lora",
+    "page": 6,
+    "phrase": "The resulting number of trainable parameters is |Θ| = L × dmodel × (lp + li )"
+   },
+   {
+    "source": "instructgpt",
+    "page": 42,
+    "phrase": "Because T0 contains much more data (96M datapoints) than FLAN (1.2M datapoints), we subsampled T0 to 1 million datapoints"
+   }
+  ],
+  "id": "q085"
+ },
+ {
+  "kind": "multi",
+  "question": "How does the effectiveness of low-rank adaptation for language-specific tasks compare to the performance of models like InstructGPT when handling non-English languages?",
+  "targets": [
+   {
+    "source": "lora",
+    "page": 10,
+    "phrase": "if the downstream task were in a different language than the one used for pre-training, retraining the entire model"
+   },
+   {
+    "source": "instructgpt",
+    "page": 15,
+    "phrase": "InstructGPT shows ability to follow instructions in non-English languages, and perform summarization and question-answering for code"
+   }
+  ],
+  "id": "q086"
+ },
+ {
+  "kind": "multi",
+  "question": "How do methods that rely on internal model states or prompt-based reasoning attempt to improve the reliability of LLM-generated answers?",
+  "targets": [
+   {
+    "source": "ragas",
+    "page": 2,
+    "phrase": "train a supervised classifier on the weights from one of the hidden layers of the LLM"
+   },
+   {
+    "source": "llm_as_judge",
+    "page": 6,
+    "phrase": "we propose a reference-guided method, in which we first generate LLM judge’s answer independently"
+   }
+  ],
+  "id": "q087"
+ },
+ {
+  "kind": "multi",
+  "question": "How does the Ragas framework's approach to evaluating RAG pipelines differ from the LLM-as-a-judge method used for assessing open-ended chat assistant responses?",
+  "targets": [
+   {
+    "source": "ragas",
+    "page": 1,
+    "phrase": "we put forward a suite of metrics which can be used to evaluate these different dimensions without having to rely on ground truth human annotations"
+   },
+   {
+    "source": "llm_as_judge",
+    "page": 4,
+    "phrase": "we are interested in whether LLMs can effectively evaluate the responses of chat assistants and match human preferences"
+   }
+  ],
+  "id": "q088"
+ },
+ {
+  "kind": "multi",
+  "question": "How do methods like REAG or RBG attempt to mitigate hallucination in answer generation compared to the goal of attributed answer methodologies?",
+  "targets": [
+   {
+    "source": "hallucination_survey",
+    "page": 26,
+    "phrase": "add an extraction task to obtain the rationale for an answer at the encoding stage"
+   },
+   {
+    "source": "correctness_not_faithfulness",
+    "page": 4,
+    "phrase": "The ultimate goal of attributed answer methodologies is to verify that certain information in the answer originates from the source document"
+   }
+  ],
+  "id": "q089"
+ },
+ {
+  "kind": "multi",
+  "question": "How do reward models and retrieval-augmented generation differ in their approaches to mitigating hallucinations in large language models?",
+  "targets": [
+   {
+    "source": "hallucination_survey",
+    "page": 39,
+    "phrase": "Training reliable reward models such that desirable and undesirable outputs are distinguished is an effective method for mitigating hallucination"
+   },
+   {
+    "source": "correctness_not_faithfulness",
+    "page": 1,
+    "phrase": "enable generated text that is directly grounded in retrieved source documents and accompanied by citations"
+   }
+  ],
+  "id": "q090"
+ },
+ {
+  "kind": "multi",
+  "question": "How do the similarity measures used in DPR and SBERT differ when evaluating retrieval or textual similarity performance?",
+  "targets": [
+   {
+    "source": "dpr",
+    "page": 12,
+    "phrase": "negate L2 similarity scores before applying softmax and change signs of question-topositive and question-to-negative similarities"
+   },
+   {
+    "source": "sbert",
+    "page": 4,
+    "phrase": "we always use cosine-similarity to compare the similarity between two sentence embeddings"
+   }
+  ],
+  "id": "q091"
+ },
+ {
+  "kind": "multi",
+  "question": "How do the reasoning approaches in chain of thought prompting and ReAct differ in their application to language models?",
+  "targets": [
+   {
+    "source": "chain_of_thought",
+    "page": 4,
+    "phrase": "we used this single set of eight chain of thought exemplars for all benchmarks"
+   },
+   {
+    "source": "react",
+    "page": 9,
+    "phrase": "a simple yet effective method for synergizing reasoning and acting in large language models"
+   }
+  ],
+  "id": "q092"
+ },
+ {
+  "kind": "multi",
+  "question": "How does the performance and reliability of chain-of-thought prompting compare when used for simple list reversal tasks versus complex reasoning tasks that require factual grounding?",
+  "targets": [
+   {
+    "source": "chain_of_thought",
+    "page": 18,
+    "phrase": "a third co-author was able to write a chain of thought that perfectly solved the task"
+   },
+   {
+    "source": "react",
+    "page": 5,
+    "phrase": "CoT is more accurate in formulating reasoning structure but can easily suffer from hallucinated facts or thoughts"
+   }
+  ],
+  "id": "q093"
+ },
+ {
+  "kind": "multi",
+  "question": "How does the impact of increasing the number of retrieved documents on QA performance differ between GPT-3.5-Turbo and RAG models?",
+  "targets": [
+   {
+    "source": "lost_in_the_middle",
+    "page": 5,
+    "phrase": "performance in 20- and 30-document settings is lower than performance without any input documents"
+   },
+   {
+    "source": "rag",
+    "page": 8,
+    "phrase": "retrieving more documents at test time monotonically improves Open-domain QA results for RAG-Sequence"
+   }
+  ],
+  "id": "q094"
+ },
+ {
+  "kind": "multi",
+  "question": "How do the NaturalQuestions and FEVER datasets differ in their reliance on Wikipedia for verifying or answering claims?",
+  "targets": [
+   {
+    "source": "lost_in_the_middle",
+    "page": 14,
+    "phrase": "the Wikipedia retrieval corpus contains the information that he plays for the “Baltimore Ravens”, since he was released from the team"
+   },
+   {
+    "source": "rag",
+    "page": 5,
+    "phrase": "The task requires retrieving evidence from Wikipedia relating to the claim and then reasoning over this evidence to classify whether the claim is true"
+   }
+  ],
+  "id": "q095"
+ },
+ {
+  "kind": "multi",
+  "question": "How does the CLIP architecture's use of a Transformer for text encoding compare to the approach of using autoregressive transformers for image synthesis in VQGANs?",
+  "targets": [
+   {
+    "source": "clip",
+    "page": 5,
+    "phrase": "The text encoder is a Transformer (Vaswani et al., 2017) with the architecture modifications described in Radford et al. (2019)."
+   },
+   {
+    "source": "latent_diffusion",
+    "page": 3,
+    "phrase": "VQGANs [23, 103] employ a first stage with an adversarial and perceptual objective to scale autoregressive transformers to larger images."
+   }
+  ],
+  "id": "q096"
+ },
+ {
+  "kind": "multi",
+  "question": "How do the evaluation metrics and similarity measures used for Chinese text embeddings in C-MTEB compare to the approach used for evaluating SBERT on Semantic Textual Similarity tasks?",
+  "targets": [
+   {
+    "source": "bge",
+    "page": 6,
+    "phrase": "The main metric presented in Section 3.1 is reported for each evaluation task in C-MTEB"
+   },
+   {
+    "source": "sbert",
+    "page": 4,
+    "phrase": "we compute the Spearman’s rank correlation between the cosine-similarity of the sentence embeddings and the gold labels"
+   }
+  ],
+  "id": "q097"
+ },
+ {
+  "kind": "multi",
+  "question": "How do the training data sources and evaluation methodologies differ between the BGE-pretrain model and SBERT?",
+  "targets": [
+   {
+    "source": "bge",
+    "page": 7,
+    "phrase": "C-MTP (unlabeled), which is used for general-purpose fine-tuning; the model produced from this stage is called the intermediate checkpoint"
+   },
+   {
+    "source": "sbert",
+    "page": 7,
+    "phrase": "For the classification objective function, we train SBERTbase on the SNLI and the Multi-NLI dataset"
+   }
+  ],
+  "id": "q098"
+ },
+ {
+  "kind": "multi",
+  "question": "How do the methods for evaluating model toxicity differ between using an automated classifier and relying on human labelers to assess potential harm?",
+  "targets": [
+   {
+    "source": "llama2",
+    "page": 69,
+    "phrase": "use the default ToxiGen classifier tuned on RoBERTa (Liu et al., 2019) to measure the toxicity of generations"
+   },
+   {
+    "source": "instructgpt",
+    "page": 10,
+    "phrase": "we have labelers evaluate whether an output is inappropriate in the context of a customer assistant"
+   }
+  ],
+  "id": "q099"
+ },
+ {
+  "kind": "multi",
+  "question": "How does the perspective on stakeholder inclusion in AI development differ between the argument for open model releases and the analysis of alignment processes?",
+  "targets": [
+   {
+    "source": "llama2",
+    "page": 35,
+    "phrase": "fosters real collaboration with diverse stakeholders—those beyond the walls of big tech companies"
+   },
+   {
+    "source": "instructgpt",
+    "page": 18,
+    "phrase": "There are many stakeholders to consider—the organization training the model, the customers using the model"
+   }
+  ],
+  "id": "q100"
+ },
+ {
+  "kind": "multi",
+  "question": "How does the integration of multimodality in foundation models relate to the challenges of handling low-resource data scenarios in large language models?",
+  "targets": [
+   {
+    "source": "foundation_model_risks",
+    "page": 16,
+    "phrase": "multimodallity — to consume, process and potentially produce content from different sources and domains"
+   },
+   {
+    "source": "hallucination_survey",
+    "page": 41,
+    "phrase": "multi-modal scenarios are inherently low-resource for text-only pretrained LLMs"
+   }
+  ],
+  "id": "q101"
+ },
+ {
+  "kind": "multi",
+  "question": "How do structured representations like knowledge graphs and entity information contribute to the training or performance of machine learning models?",
+  "targets": [
+   {
+    "source": "foundation_model_risks",
+    "page": 80,
+    "phrase": "structured, potentially graph-based, object-oriented representations [Zhang et al. 2019a; Wang et al. 2021a], that center around identifying entities and event nodes"
+   },
+   {
+    "source": "hallucination_survey",
+    "page": 12,
+    "phrase": "Examples of the augmented information include entity information [162], extracted relation triples from source document [25, 102] obtained by Fact Description Extraction"
+   }
+  ],
+  "id": "q102"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the best recipe for a vegetarian lasagna?",
+  "targets": [],
+  "id": "q103"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "Who won the 2022 FIFA World Cup?",
+  "targets": [],
+  "id": "q104"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "How do I deploy a Kubernetes pod with a persistent volume?",
+  "targets": [],
+  "id": "q105"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the boiling point of ethanol in Celsius?",
+  "targets": [],
+  "id": "q106"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "Which programming language was used to write the Linux kernel?",
+  "targets": [],
+  "id": "q107"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the capital of Australia?",
+  "targets": [],
+  "id": "q108"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "How many players are on a cricket team?",
+  "targets": [],
+  "id": "q109"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the current price of Bitcoin?",
+  "targets": [],
+  "id": "q110"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the context window of Gemini 1.5 Pro?",
+  "targets": [],
+  "id": "q111"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "How much did it cost to train Gemini Ultra?",
+  "targets": [],
+  "id": "q112"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "Who founded DeepMind?",
+  "targets": [],
+  "id": "q113"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What GPU memory is needed to fine-tune a 70B model with QLoRA on one card?",
+  "targets": [],
+  "id": "q114"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What topics does an undergraduate operating systems course cover?",
+  "targets": [],
+  "id": "q115"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "How does the Mamba state space model work?",
+  "targets": [],
+  "id": "q116"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the license of the Mistral 7B weights?",
+  "targets": [],
+  "id": "q117"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What was the training dataset size of Stable Diffusion 3?",
+  "targets": [],
+  "id": "q118"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "How do I set up OAuth2 login in Django?",
+  "targets": [],
+  "id": "q119"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "What is the Fermi paradox?",
+  "targets": [],
+  "id": "q120"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "Which Indian state has the largest area?",
+  "targets": [],
+  "id": "q121"
+ },
+ {
+  "kind": "unanswerable",
+  "question": "How is mRNA vaccine technology manufactured?",
+  "targets": [],
+  "id": "q122"
+ }
+]
