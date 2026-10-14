@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.llm_cache/
+data/corpus/
+index/
+build.log
+*.bundle
+.pytest_cache/
+app.log
+.venv/
+venv/

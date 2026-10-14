@@ -1,0 +1,353 @@
+[
+ {
+  "id": "q075",
+  "question": "Which datasets were used to evaluate the performance of both the adversarial nets and the generative models described in the respective studies?",
+  "single_correct": "refused",
+  "single_gold_recall": 0.5,
+  "agent_correct": "correct",
+  "agent_gold_recall": 0.5,
+  "agent_steps": 5,
+  "agent_tools": [
+   "search_documents",
+   "list_sources",
+   "search_documents",
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "Based on the study on generative adversarial nets (GANs), the performance of the adversarial nets and other generative models (such as Deep Belief Networks, Stacked Contractive Autoencoders, and Deep Generative Stochastic Networks) was evaluated using the following datasets [gan, p. 5, 6]:\n\n* **MNIST** (specifically the real-valued version of the dataset) [gan, p. 5, 6]\n* **Toronto Face Database (TFD)** [gan, p. 5, 6]\n* **CIFAR-10** [gan, p. 5]",
+  "single_answer": "INSUFFICIENT_EVIDENCE"
+ },
+ {
+  "id": "q076",
+  "question": "How do the approaches described in the two texts differ regarding the use of simplifying assumptions and the handling of intractable probability distributions?",
+  "single_correct": "refused",
+  "single_gold_recall": 0.5,
+  "agent_correct": "incorrect",
+  "agent_gold_recall": 0.5,
+  "agent_steps": 6,
+  "agent_tools": [
+   "list_sources",
+   "search_documents",
+   "search_documents",
+   "search_documents",
+   "read_page",
+   "read_page"
+  ],
+  "agent_finished": false,
+  "agent_invalid_citations": 0,
+  "agent_answer": "(step limit reached)",
+  "single_answer": "INSUFFICIENT_EVIDENCE"
+ },
+ {
+  "id": "q077",
+  "question": "How does the approach to modeling the diffusion process in latent space differ from traditional diffusion models that operate directly on pixel space?",
+  "single_correct": "correct",
+  "single_gold_recall": 0.0,
+  "agent_correct": "correct",
+  "agent_gold_recall": 0.5,
+  "agent_steps": 2,
+  "agent_tools": [
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "The approach to modeling the diffusion process in **latent space** (as used in Latent Diffusion Models, or LDMs) differs from traditional diffusion models operating directly in **pixel space** in several key ways:\n\n* **Operating Domain:** Traditional diffusion models apply the sequential denoising and diffusion process directly to high-dimensional pixel data [latent_diffusion, p. 1]. In contrast, latent diffusion models first encode images into a lower-dimensional latent space using a pretrained autoencoder (such that $z = E(x)$), and then perform the diffusion and denoising process entirely within this latent representation [latent_diffusion, p. 1, 4].\n* **Computational Efficiency and Training Costs:** Pixel-space diffusion models often require hundreds of GPU days to optimize because they must process high-resolution spatial details and high-dimensional inputs [latent_diffusion, p. 1]. By shifting the diffusion process to a compressed latent space, LDMs drastically reduce computational requirements, allowing them to be trained efficiently on limited computational resources [latent_diffusion, p. 1].\n* **Inference Speed:** Inference in pixel-space diffusion models is expensive due to the heavy sequential evaluations required over high-dimensional pixels [latent_diffusion, p. 1]. Because latent spaces have lower complexity and smaller spatial dimensions (while still preserving perceptual details), image generation and network passes during inference become significantly faster [latent_diffusion, p. 1, 2].\n* **Preservation of Structure and Detail:** Earlier attempts to use compressed representations often relied on arbitrary 1-D orderings (e.g., in autoregressive models), which discarded the inherent spatial structure of the data [latent_diffusion, p. 4]. LDMs utilize a two-dimensional latent space paired with mild compression rates, allowing the U-Net backbone to leverage 2D convolutional layers directly. This achieves a balance between complexity reduction and detail preservation, boosting visual fidelity [latent_diffusion, p. 1, 4].\n* **Modularity and Reusability:** The autoencoding stage in latent diffusion models is trained independently and only once [latent_diffusion, p. 2]. This universal latent space can then be reused across multiple different diffusion model trainings, tasks (such as text-to-image, inpainting, or super-resolution), and conditioning mechanisms without retraining the compression model itself [latent_diffusion, p. 1, 2].",
+  "single_answer": "Traditional diffusion models typically operate directly in pixel space, which causes optimization to consume hundreds of GPU days and makes inference expensive due to sequential evaluations [1]. In contrast, applying diffusion models in the latent space of powerful pretrained autoencoders enables training on limited computational resources while preserving quality, reduces complexity to allow efficient image generation with a single network pass, and reaches a near-optimal point between complexity reduction and detail preservation [1][2]."
+ },
+ {
+  "id": "q078",
+  "question": "How do generative models and deep learning modules relate to the issue of bias in training data?",
+  "single_correct": "correct",
+  "single_gold_recall": 1.0,
+  "agent_correct": "correct",
+  "agent_gold_recall": 1.0,
+  "agent_steps": 1,
+  "agent_tools": [
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "Based on the provided documents, deep learning modules and generative models relate to the issue of bias in training data in the following ways:\n\n* **Reproduction and Exacerbation:** Deep learning modules tend to reproduce or exacerbate biases that are already present in the training data [latent_diffusion, p. 9].\n* **Reflection of Dataset Biases:** Generative models reflect the biases found in the datasets they are trained on [ddpm, p. 9].\n* **Difficulty of Removal:** Because large datasets are often automatically collected from the internet, removing these biases is difficult\u2014particularly when the images are unlabeled [ddpm, p. 9].\n* **Reinforcement Loops:** If samples produced by generative models trained on biased datasets spread across the internet, these existing biases are reinforced even further [ddpm, p. 9].",
+  "single_answer": "Deep learning modules and generative models tend to reproduce or exacerbate the biases that are already present in their training data [1, 2, 5]. Foundation models can amplify training data biases, extending trends seen in machine learning and deep learning models [2]. Furthermore, when samples from generative models trained on internet-collected datasets proliferate, these biases are reinforced further [5]."
+ },
+ {
+  "id": "q079",
+  "question": "How does the Self-RAG framework address the limitations of the standard Retrieval-Augmented Generation approach regarding the indiscriminate use of retrieved information?",
+  "single_correct": "correct",
+  "single_gold_recall": 0.0,
+  "agent_correct": "correct",
+  "agent_gold_recall": 0.5,
+  "agent_steps": 2,
+  "agent_tools": [
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "The Self-RAG framework addresses the limitations of standard RAG regarding the indiscriminate use of retrieved information by introducing **on-demand retrieval** and **self-reflection via special reflection tokens** [self_rag, p. 1]. \n\nSpecifically, Self-RAG tackles these issues in the following ways:\n\n* **Adaptive, On-Demand Retrieval:** Instead of retrieving passages indiscriminately for every input (which can introduce unnecessary or off-topic passages and hurt generation quality), Self-RAG trains the language model to determine *when* retrieval is actually needed [self_rag, p. 1, 3]. It does this by generating a specific reflection token (e.g., indicating the need to retrieve) only on an as-needed basis [self_rag, p. 1, 3].\n* **Evaluating Passage Relevance:** When passages are retrieved, the model evaluates and critiques their relevance to the text generation task using reflection tokens [self_rag, p. 3].\n* **Self-Correction and Factual Grounding:** Rather than blindly using retrieved text, the model is trained to evaluate its own generations\u2014checking whether the generated output is fully supported by the retrieved passages and whether it is useful\u2014ensuring consistency and reducing hallucinations [self_rag, p. 1, 3].",
+  "single_answer": "The Self-RAG framework addresses limitations by allowing the language model to adaptively retrieve passages on-demand and use special tokens, known as reflection tokens, to evaluate and reflect on its own generation process and the retrieved passages [1][3]."
+ },
+ {
+  "id": "q080",
+  "question": "How does the reliance on parametric knowledge for title completion in language models compare to the strategy of using adaptive retrieval to ensure factual accuracy in generation tasks?",
+  "single_correct": "refused",
+  "single_gold_recall": 0.5,
+  "agent_correct": "correct",
+  "agent_gold_recall": 1.0,
+  "agent_steps": 2,
+  "agent_tools": [
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "Based on the provided literature, the reliance on parametric knowledge for title completion contrasts with the strategy of adaptive retrieval (such as in Self-RAG) in terms of when and how knowledge is accessed and utilized during generation:\n\n* **Parametric Knowledge for Title Completion:** \n  When language models perform tasks like title completion (e.g., in Retrieval-Augmented Generation studies), analysis of document posteriors shows that non-parametric retrieval is heavily utilized initially (e.g., to guide the model toward a specific book or entity), but once the initial tokens are generated, the document posterior flattens [rag, p. 6]. This indicates that the model relies entirely on its internal parametric memory to complete the rest of the title without needing further external document conditioning [rag, p. 6]. While efficient for memorized entities, relying solely on parametric knowledge can otherwise contribute to hallucinations or limit factual accuracy when tasks require up-to-date or verifiable evidence [hallucination_survey, p. 8; self_rag, p. 1].\n\n* **Adaptive Retrieval for Factual Accuracy:** \n  In contrast, adaptive retrieval frameworks (such as SELF-RAG) dynamically decide *on-demand* whether and when to retrieve external passages based on the specific demands of the task and self-reflection tokens [self_rag, p. 1, 6]. Rather than unconditionally relying on internal parameters or indiscriminately fetching external text, the model evaluates generation steps to retrieve passages more frequently when tasks demand strict factual accuracy, ensuring that outputs align closely with external evidence and reducing factual errors [self_rag, p. 1, 6].",
+  "single_answer": "INSUFFICIENT_EVIDENCE"
+ },
+ {
+  "id": "q081",
+  "question": "How does the use of the Wikipedia search engine API in ReAct compare to its usage in models that require a minimum parameter threshold to effectively leverage tools?",
+  "single_correct": "refused",
+  "single_gold_recall": 1.0,
+  "agent_correct": "correct",
+  "agent_gold_recall": 1.0,
+  "agent_steps": 2,
+  "agent_tools": [
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "In models that require a minimum parameter threshold to effectively leverage tools (such as Toolformer, where the ability to leverage tools only emerges at around 775M parameters), the Wikipedia search engine API serves as an exception [toolformer, p.8]. While other tools require models to meet this parameter threshold before yielding benefits, the Wikipedia search engine API\u2014used mostly for QA benchmarks\u2014is an exception because the API is comparably easy to use [toolformer, p.8].\n\nIn contrast, within the **ReAct** framework, the Wikipedia web API is designed to support interactive information retrieval through specific actions (`search[entity]`, `lookup[string]`, and `finish[answer]`) [react, p.4]. Rather than studying a minimum parameter threshold for tool emergence, ReAct uses a simple action space combined with explicit reasoning in language to simulate human interaction with Wikipedia, allowing models to retrieve information and target subsequent retrieval steps dynamically [react, p.4].",
+  "single_answer": "INSUFFICIENT_EVIDENCE"
+ },
+ {
+  "id": "q082",
+  "question": "How does the zero-shot approach to tool use in autonomous systems differ from methods that rely on providing specific examples of how to solve a task?",
+  "single_correct": "correct",
+  "single_gold_recall": 0.5,
+  "agent_correct": "correct",
+  "agent_gold_recall": 0.5,
+  "agent_steps": 1,
+  "agent_tools": [
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "In the zero-shot approach to tool use (such as in the setup used for Toolformer), models are instructed to solve tasks in natural language **without being provided any in-context examples** of how a tool should be used [toolformer, p. 5]. \n\nThis differs from methods relying on specific examples (prior work), where models are provided with dataset-specific examples demonstrating how a tool can be utilized to solve a concrete task [toolformer, p. 5]. The zero-shot setup is chosen when evaluating cases where a user does not specify in advance which tools should be used or in what way for solving a specific problem [toolformer, p. 5].",
+  "single_answer": "In contrast to prior work where models are provided with dataset-specific examples showing how a tool can be used to solve a concrete task, a zero-shot setup instructs models to solve tasks in natural language without any in-context examples [1]. The zero-shot setup is more challenging and is chosen when a user does not specify in advance which tools should be used in which way to solve a particular problem [1]."
+ },
+ {
+  "id": "q083",
+  "question": "How do the training approaches for BERT and GPT-3 differ in terms of their focus on pre-training steps versus model parameter scaling?",
+  "single_correct": "refused",
+  "single_gold_recall": 0.5,
+  "agent_correct": "partial",
+  "agent_gold_recall": 0.5,
+  "agent_steps": 3,
+  "agent_tools": [
+   "search_documents",
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "The training approaches for BERT and GPT-3 differ significantly in their model architectures, pre-training objectives, how they handle downstream tasks (fine-tuning vs. few-shot scaling), and their philosophy regarding parameter scaling versus training steps:\n\n* **Model Scale and Parameter Count:** \n  * **GPT-3** focuses heavily on extreme parameter scaling, training an autoregressive language model with **175 billion parameters**\u2014an order of magnitude larger than previous non-sparse language models [gpt3, p. 1]. \n  * **BERT** uses much smaller model configurations (such as BERT-Base and BERT-Large) focused on bidirectional encoder representations rather than massive parameter counts [bert, p. 1, 14].\n\n* **Approach to Pre-training Steps and Token Efficiency:**\n  * **GPT-3** follows the scaling laws analyzed by Kaplan et al. (2020), which indicate that when scaling up model size, it is optimal to train much larger models on **many fewer tokens** than might traditionally be expected relative to their capacity [gpt3, p. 9]. \n  * **BERT** relies on standard pre-training objectives (Masked Language Modeling and Next Sentence Prediction) over extensive pre-training steps to learn deep bidirectional context, which is then explicitly adapted via task-specific fine-tuning [bert, p. 1].\n\n* **Downstream Task Adaptation (Fine-tuning vs. In-Context Learning):**\n  * **BERT** relies entirely on a **fine-tuning approach**, updating pre-trained parameters with task-specific labeled data for downstream applications [bert, p. 1].\n  * **GPT-3** relies on **parameter scaling combined with task-agnostic few-shot learning** (or zero-shot settings). It is applied without any gradient updates, weight modifications, or fine-tuning; tasks and demonstrations are communicated purely through text interaction (in-context learning) [gpt3, p. 1].",
+  "single_answer": "INSUFFICIENT_EVIDENCE"
+ },
+ {
+  "id": "q084",
+  "question": "How do the computational benefits of using fixed features from a pretrained model compare to the focus on autoregressive language models for downstream task performance?",
+  "single_correct": "refused",
+  "single_gold_recall": 0.5,
+  "agent_correct": "correct",
+  "agent_gold_recall": 1.0,
+  "agent_steps": 2,
+  "agent_tools": [
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "According to the literature, using fixed features from a pretrained model (the feature-based approach) offers major computational benefits: **it allows you to pre-compute an expensive representation of the training data just once, and then run many subsequent experiments using much cheaper models on top of those representations [bert, p. 9].** Additionally, it accommodates tasks that cannot be easily represented by standard Transformer encoder architectures, allowing for task-specific model architectures [bert, p. 9].\n\nIn contrast, focusing on autoregressive language models (such as GPT-3) centers heavily on task-agnostic architectures, in-context learning, and zero-, one-, or few-shot transfer without requiring task-specific output heads or specialized fine-tuning data [gpt3, p. 40; clip, p. 1]. While autoregressive models achieve strong downstream task performance through massive scale [gpt3, p. 40; clip, p. 1], pure autoregressive implementations bypass fine-tuning to reduce complexity, though incorporating architectural or feature-based advances remains a promising direction for improving downstream performance further [gpt3, p. 40]. Furthermore, research contrasting fine-tuning with feature extraction highlights that fine-tuning directly on downstream tasks allows models to fully leverage larger, more expressive pretrained representations even with small amounts of task data [bert, p. 9].",
+  "single_answer": "INSUFFICIENT_EVIDENCE"
+ },
+ {
+  "id": "q085",
+  "question": "How do the parameter counts for prefix-layer tuning and the training data volumes for FLAN and T0 models compare in terms of their respective scaling factors?",
+  "single_correct": "refused",
+  "single_gold_recall": 0.5,
+  "agent_correct": "correct",
+  "agent_gold_recall": 1.0,
+  "agent_steps": 3,
+  "agent_tools": [
+   "search_documents",
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "Based on the provided documents:\n\n* **Prefix-Layer Tuning Parameter Counts:** \n  The number of trainable parameters for prefix-layer tuning is scaled by the number of Transformer layers ($L$), the model's hidden dimension ($d_{\\text{model}}$), and the number of prefix/infix tokens ($l_p + l_i$):\n  $$|\\Theta| = L \\times d_{\\text{model}} \\times (l_p + l_i)$$\n  For example, using $l_p = 8$ and $l_i = 8$ yields 20.2M trainable parameters [lora, p. 6, 20]. Furthermore, increasing the number of special tokens beyond 32 for prefix-layer tuning leads to a significant performance drop [lora, p. 8].\n\n* **FLAN and T0 Training Data Volumes:** \n  The original training data volumes differ significantly between the two models: **FLAN** contains **1.2 million** datapoints, whereas **T0** (specifically the T0++ version) contains **96 million** datapoints [instructgpt, p. 42]. Because of this large difference in their raw volumes, evaluations comparing them (such as fine-tuning a 175B GPT-3 model) often subsample T0 down to **1 million** datapoints to make the training data volumes comparable [instructgpt, p. 42, 43].",
+  "single_answer": "INSUFFICIENT_EVIDENCE"
+ },
+ {
+  "id": "q086",
+  "question": "How does the effectiveness of low-rank adaptation for language-specific tasks compare to the performance of models like InstructGPT when handling non-English languages?",
+  "single_correct": "refused",
+  "single_gold_recall": 0.5,
+  "agent_correct": "refused",
+  "agent_gold_recall": 0.0,
+  "agent_steps": 3,
+  "agent_tools": [
+   "search_documents",
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "Based on the provided documents, there is no direct comparison between the effectiveness of low-rank adaptation (LoRA) for language-specific tasks in non-English languages and the performance of models like InstructGPT on those same languages. \n\nThe documents discuss LoRA's performance across benchmarks like GLUE, WikiSQL, and SAMSum and note that it matches or exceeds full fine-tuning on models like RoBERTa, DeBERTa, and GPT-3 without evaluating non-English language tasks specifically [lora, p. 1, 5]. Conversely, for InstructGPT, the text notes that alignment methods can generalize to non-English tasks (even when non-English data forms a tiny minority of fine-tuning data), though the model often still produces English outputs or requires careful prompting [instructgpt, p. 16]. However, the sources do not provide a direct performance or effectiveness comparison between the two approaches for non-English languages.\n\nINSUFFICIENT_EVIDENCE",
+  "single_answer": "INSUFFICIENT_EVIDENCE"
+ },
+ {
+  "id": "q087",
+  "question": "How do methods that rely on internal model states or prompt-based reasoning attempt to improve the reliability of LLM-generated answers?",
+  "single_correct": "refused",
+  "single_gold_recall": 1.0,
+  "agent_correct": "partial",
+  "agent_gold_recall": 1.0,
+  "agent_steps": 3,
+  "agent_tools": [
+   "search_documents",
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "Based on the provided documents, methods relying on prompt-based reasoning and internal model states attempt to improve the reliability and accuracy of LLM-generated answers through several key approaches:\n\n* **Chain-of-Thought (CoT) Prompting:** CoT prompting augments the output of language models by instructing or demonstrating how to generate a series of intermediate reasoning steps before arriving at a final answer [chain_of_thought, p. 1, 9]. By breaking down complex problems (such as arithmetic, symbolic, and commonsense reasoning tasks) into sequential steps, this method elicits better reasoning performance, particularly in sufficiently large models [chain_of_thought, p. 1].\n* **Reference-Guided and Independent Reasoning Prompts:** To mitigate issues like being misled by context or repeating mistakes from given answers, reasoning and evaluation prompts can be structured to encourage independent problem-solving first [llm_as_judge, p. 6]. For example, prompting an LLM judge to answer a question independently before grading or displaying its initial independent answer as a reference significantly reduces failure rates [llm_as_judge, p. 6]. \n* **Leveraging Internal Model States and Probing:** Researchers look to understand and verify model internals\u2014such as probing internal model states and processes during generation\u2014to evaluate how and where a model generates its answers, establish control settings, and ensure that generated content and attributions are faithful rather than artifacts of irrelevant context [correctness_not_faithfulness, p. 12].",
+  "single_answer": "INSUFFICIENT_EVIDENCE"
+ },
+ {
+  "id": "q088",
+  "question": "How does the Ragas framework's approach to evaluating RAG pipelines differ from the LLM-as-a-judge method used for assessing open-ended chat assistant responses?",
+  "single_correct": "refused",
+  "single_gold_recall": 1.0,
+  "agent_correct": "correct",
+  "agent_gold_recall": 1.0,
+  "agent_steps": 2,
+  "agent_tools": [
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "The **LLM-as-a-judge** method and the **Ragas framework** differ fundamentally in their scope, architecture, and what they measure:\n\n* **Scope and Objective:**\n  * **LLM-as-a-judge** (such as MT-bench or Chatbot Arena) is designed to evaluate general, open-ended chat assistant responses [llm_as_judge, p.1, p.4]. It typically assesses broad conversational capabilities, instruction-following, helpfulness, and human preferences on open-ended questions without requiring reference answers or external knowledge bases [llm_as_judge, p.1, p.4]. \n  * **Ragas (Retrieval Augmented Generation Assessment)** is specifically engineered for reference-free evaluation of Retrieval-Augmented Generation (RAG) pipelines [ragas, p.1]. It breaks down the evaluation of a RAG system into distinct compositional dimensions across both the retrieval and generation components [ragas, p.1, p.5].\n\n* **Evaluation Dimensions:**\n  * **LLM-as-a-judge** typically relies on holistic single-answer grading (assigning a general score) or pairwise comparisons (determining which of two assistant responses is better or tied) based on overall quality and human preference [llm_as_judge, p.4].\n  * **Ragas** targets specific pipeline components by evaluating distinct metrics, including:\n    * *Faithfulness:* Whether the generated answer is strictly grounded in and deducible from the retrieved context (detecting hallucinations) [ragas, p.5].\n    * *Answer Relevance:* Whether the response directly addresses and is appropriate for the given question without unnecessary redundancy [ragas, p.5].\n    * *Context Relevance (or Precision/Recall):* Whether the retrieval system successfully identified focused, relevant context passages from the textual database without including excessive noise [ragas, p.1, p.5].",
+  "single_answer": "INSUFFICIENT_EVIDENCE"
+ },
+ {
+  "id": "q089",
+  "question": "How do methods like REAG or RBG attempt to mitigate hallucination in answer generation compared to the goal of attributed answer methodologies?",
+  "single_correct": "correct",
+  "single_gold_recall": 1.0,
+  "agent_correct": "correct",
+  "agent_gold_recall": 1.0,
+  "agent_steps": 3,
+  "agent_tools": [
+   "search_documents",
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "Methods like REAG (Rationale-Enriched Answer Generator) and RBG (Read Before Generate) attempt to mitigate hallucination in answer generation by modifying conditional generation and modeling processes during inference or encoding:\n\n* **REAG** adds an extraction task at the encoding stage to obtain the rationale for an answer, allowing the decoder to generate the response based on both the original input and the extracted rationale [hallucination_survey, p.26].\n* **RBG** is a framework designed to jointly model answer generation with machine reading [hallucination_survey, p.26].\n\nIn contrast, the ultimate goal of **attributed answer methodologies** is to verify that specific information within a generated answer actually originates from the source document [correctness_not_faithfulness, p.4]. Rather than altering how a model internally processes or extracts text during generation (like REAG or RBG), attributed answer methodologies focus on linking generated outputs to supporting evidence\u2014ranging from post-hoc attributions and prompting to specialized training paradigms\u2014to improve output quality, reduce hallucinations, and build user trust [correctness_not_faithfulness, p.3].",
+  "single_answer": "Li et al. propose the Rationale-Enriched Answer Generator (REAG), where an extraction task is added to obtain the rationale for an answer during the encoding stage, allowing the decoder to generate the answer based on both the original input and the extracted rationale [1]. Su et al. propose the \"read before generate\" (RBG) framework to jointly model answer generation with machine reading [1]. In contrast, the ultimate goal of attributed answer methodologies is to verify that specific information within an answer originates from the source document [3]."
+ },
+ {
+  "id": "q090",
+  "question": "How do reward models and retrieval-augmented generation differ in their approaches to mitigating hallucinations in large language models?",
+  "single_correct": "refused",
+  "single_gold_recall": 1.0,
+  "agent_correct": "correct",
+  "agent_gold_recall": 1.0,
+  "agent_steps": 2,
+  "agent_tools": [
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "Reward models and retrieval-augmented generation (RAG) differ fundamentally in how they approach and mitigate hallucinations in large language models:\n\n* **Reward Models (via Safety Fine-Tuning and RLHF):** \n  * **Approach:** Reward models are used within reinforcement learning pipelines (such as RLHF) to score model outputs, distinguishing between desirable (factual) and undesirable (hallucinated or non-factual) responses [hallucination_survey, p. 39]. These models learn from human preferences or synthetic data (e.g., flagging non-factual real-world data or using models like GPT-4 to generate training data for closed-domain tasks) [hallucination_survey, p. 39]. \n  * **Mechanism:** By optimizing the language model's policy via algorithms like PPO using these reward signals, the model is guided toward generating more truthful, aligned outputs directly from its parametric memory [hallucination_survey, p. 39]. \n\n* **Retrieval-Augmented Generation (RAG):**\n  * **Approach:** RAG is an inference- and architecture-level technique that enhances the reliability of generative models by leveraging external, non-parametric sources (such as search engines or dense vector indexes of documents) [hallucination_survey, p. 39; rag, p. 1]. \n  * **Mechanism:** Instead of relying solely on the model's internal parameters, RAG retrieves external references or source documents to ground the generated text, making claims more verifiable and reducing fabrications by anchoring generation in concrete data [hallucination_survey, p. 39; correctness_not_faithfulness, p. 1].",
+  "single_answer": "INSUFFICIENT_EVIDENCE"
+ },
+ {
+  "id": "q091",
+  "question": "How do the similarity measures used in DPR and SBERT differ when evaluating retrieval or textual similarity performance?",
+  "single_correct": "correct",
+  "single_gold_recall": 0.5,
+  "agent_correct": "correct",
+  "agent_gold_recall": 0.5,
+  "agent_steps": 1,
+  "agent_tools": [
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "Based on the provided documents, the similarity measures used in DPR and SBERT differ in the following ways:\n\n* **DPR (Dense Passage Retrieval):** DPR defines the similarity between a question ($q$) and a passage ($p$) using the **dot product** of their vectors: $\\text{sim}(q, p) = E_Q(q)^T E_P(p)$ [dpr, p.3]. This inner product search is chosen because the similarity function needs to be decomposable so that passage representations can be precomputed for large collections [dpr, p.3].\n* **SBERT (Sentence-BERT):** SBERT always uses **cosine-similarity** to compare the similarity between two sentence embeddings [sbert, p.4]. (The authors note they also experimented with negative Manhattan and negative Euclidean distances, and the results were roughly the same) [sbert, p.4]. Cosine-similarity is evaluated using Spearman's rank correlation against gold labels for Semantic Textual Similarity (STS) tasks [sbert, p.4]. \n\n*(Note: The documents also point out that while cosine similarity is equivalent to the inner product for unit vectors, DPR specifically relies on the dot product/inner product formulation for decomposable efficient retrieval, whereas SBERT relies on cosine-similarity for comparing sentence embedding pairs in STS tasks [dpr, p.3; sbert, p.4].)*",
+  "single_answer": "DPR defines the similarity between a question and a passage using the dot product of their vectors [4]. In contrast, SBERT always uses cosine-similarity to compare the similarity between two sentence embeddings [1]."
+ },
+ {
+  "id": "q092",
+  "question": "How do the reasoning approaches in chain of thought prompting and ReAct differ in their application to language models?",
+  "single_correct": "incorrect",
+  "single_gold_recall": 0.0,
+  "agent_correct": "correct",
+  "agent_gold_recall": 0.0,
+  "agent_steps": 3,
+  "agent_tools": [
+   "search_documents",
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "Chain-of-thought prompting and ReAct differ significantly in how language models generate and apply reasoning traces during problem-solving:\n\n* **Chain-of-Thought (CoT) Prompting:** \n  * **Nature of Reasoning:** CoT prompts models to generate a static series of intermediate natural language reasoning steps (a \"chain of thought\") internally before arriving at a final answer [chain_of_thought, p. 1, 2; react, p. 2]. \n  * **Grounding:** It operates as a \"static black box,\" meaning the model relies entirely on its internal representations and parameters to generate thoughts without grounding in the external world [react, p. 2]. \n  * **Limitations:** Because it is disconnected from external environments, it cannot reactively update its knowledge during the process, which can lead to issues like fact hallucination and error propagation over the course of the multi-step reasoning [react, p. 2].\n\n* **ReAct (Reasoning + Acting):**\n  * **Nature of Reasoning:** ReAct prompts language models to dynamically generate *both* verbal reasoning traces (thoughts) and actions in an interleaved, asynchronous manner [react, p. 2, 4]. \n  * **Grounding:** It bridges internal reasoning with external environments [react, p. 2]. The model uses thoughts to create, maintain, and adjust high-level plans (\"reason to act\"), while interacting with external environments (such as Wikipedia or interactive task environments) to retrieve observations and incorporate additional information into its reasoning (\"act to reason\") [react, p. 2]. \n  * **Advantages:** This synergy allows the model to dynamically adapt to new information, mitigate fact-hallucination vulnerabilities inherent in static reasoning, and handle tasks requiring interactive decision-making and factual verification [react, p. 2, 4].",
+  "single_answer": "Chain-of-thought prompting generates a static black-box thought process using the model's internal representations without grounding in the external world [4]. In contrast, ReAct synergizes reasoning and acting, allowing an agent to interact with an environment to solve tasks [4][5]."
+ },
+ {
+  "id": "q093",
+  "question": "How does the performance and reliability of chain-of-thought prompting compare when used for simple list reversal tasks versus complex reasoning tasks that require factual grounding?",
+  "single_correct": "refused",
+  "single_gold_recall": 0.5,
+  "agent_correct": "correct",
+  "agent_gold_recall": 0.5,
+  "agent_steps": 3,
+  "agent_tools": [
+   "search_documents",
+   "search_documents",
+   "read_page"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "Based on the provided document, the performance and reliability of chain-of-thought (CoT) prompting can vary significantly depending on the nature of the task:\n\n* **Simple List Reversal Tasks (Sensitivity and Prompt Engineering):** \n  For seemingly simple tasks\u2014such as reversing a list of 5 items\u2014chain-of-thought prompting can exhibit high sensitivity to how the prompt is constructed and a lack of robustness [chain_of_thought, p. 18]. In preliminary experiments, two co-authors were unable to write CoT prompts that successfully solved the list reversal task despite their best efforts, while a third co-author was able to write one that worked perfectly [chain_of_thought, p. 18]. Furthermore, the performance on tasks involving certain reasoning chains can vary considerably depending on the annotator (e.g., varying from 99.6% down to 71.4% across different annotators for the coin flip task) [chain_of_thought, p. 18].\n\n* **Complex Reasoning Tasks (Robust Performance and Generalization):** \n  In contrast, for complex reasoning tasks (such as multi-step arithmetic, commonsense, and symbolic reasoning), chain-of-thought prompting consistently and significantly outperforms standard prompting across sufficiently large language models [chain_of_thought, p. 1, 2]. For these tasks, CoT is robust across different annotators (including non-machine-learning crowdworkers), various sets of exemplars (even from outside the test distribution), different prompt orders, and varying numbers of exemplars, while also enabling length generalization to longer inference-time inputs [chain_of_thought, p. 8, 18].",
+  "single_answer": "INSUFFICIENT_EVIDENCE"
+ },
+ {
+  "id": "q094",
+  "question": "How does the impact of increasing the number of retrieved documents on QA performance differ between GPT-3.5-Turbo and RAG models?",
+  "single_correct": "correct",
+  "single_gold_recall": 1.0,
+  "agent_correct": "correct",
+  "agent_gold_recall": 1.0,
+  "agent_steps": 2,
+  "agent_tools": [
+   "search_documents",
+   "search_documents"
+  ],
+  "agent_finished": true,
+  "agent_invalid_citations": 0,
+  "agent_answer": "The impact of increasing the number of retrieved documents differs across models as follows:\n\n* **GPT-3.5-Turbo:** Increasing the number of total retrieved documents (e.g., expanding from 10 to 20 or 30 documents) increases the input context length and highlights a \"lost in the middle\" phenomenon [lost_in_the_middle, p. 5, 18]. Model performance is highest when the relevant information is placed at the very beginning or end of the context, and rapidly degrades when the model must reason over information located in the middle of the input context [lost_in_the_middle, p. 5].\n* **RAG Models (RAG-Token and RAG-Sequence):** Adjusting the number of retrieved documents at test time affects performance differently depending on the specific RAG variant [rag, p. 8]:\n  * **RAG-Sequence:** Retrieving more documents at test time monotonically improves Open-domain QA results [rag, p. 8].\n  * **RAG-Token:** Performance peaks at 10 retrieved documents rather than scaling monotonically [rag, p. 8]. Additionally, retrieving more documents leads to higher Rouge-L scores at the expense of Bleu-1 for RAG-Token, whereas this effect is less pronounced for RAG-Sequence [rag, p. 8].",
+  "single_answer": "For RAG models, retrieving more documents at test time monotonically improves open-domain QA results for RAG-Sequence, while performance for RAG-Token peaks at 10 retrieved documents [1]. In contrast, for GPT-3.5-Turbo, reader model performance saturates long before retriever performance, and using more than 20 retrieved documents only marginally improves its performance (by ~1.5%) while significantly increasing input context length, latency, and cost [3]. Furthermore, GPT-3.5-Turbo's multi-document QA performance can drop by more than 20%, where performance in 20- and 30-document settings can even be lower than closed-book performance without any input documents [2]."
+ }
+]

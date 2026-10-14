@@ -1,0 +1,1207 @@
+[
+ {
+  "id": "q016",
+  "kind": "single",
+  "question": "What does the 'Yes' label indicate in the context of the retrieval-on-demand reflection token?",
+  "answer": "The \"Yes\" label indicates that knowledge retrieval is necessary for the continuation [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 16.9,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "The \"Yes\" label indicates that knowledge retrieval is necessary for the continuation .",
+    "llm": "supported",
+    "nli": 0.9846858697067266
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q041",
+  "kind": "single",
+  "question": "What specific types of noise and artifacts are included in the BSR-degradation process?",
+  "answer": "The BSR-degradation process includes JPEG compression noise, camera sensor noise, Gaussian noise, Gaussian blur kernels, and different image interpolations for downsampling [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 1.28,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "The BSR-degradation process includes JPEG compression noise, camera sensor noise, Gaussian noise, Gaussian blur kernels, and different image interpolations for downsampling .",
+    "llm": "supported",
+    "nli": 0.9914898200939648
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q065",
+  "kind": "single",
+  "question": "What specific architecture does NCSN use for its model?",
+  "answer": "NCSN uses a RefineNet with dilated convolutions [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 0.69,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "NCSN uses a RefineNet with dilated convolutions .",
+    "llm": "supported",
+    "nli": 0.936489975703779
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q066",
+  "kind": "single",
+  "question": "What do organisms require energy to do according to the OpenBookQA example?",
+  "answer": "According to the OpenBookQA example, organisms require energy in order to mature and develop [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 0.72,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "According to the OpenBookQA example, organisms require energy in order to mature and develop .",
+    "llm": "supported",
+    "nli": 0.9939964678787092
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q014",
+  "kind": "single",
+  "question": "What are two examples of alternative criteria for learning that do not approximate or bound the log-likelihood?",
+  "answer": "Two examples of alternative criteria that do not approximate or bound the log-likelihood are score matching and noise-contrastive estimation (NCE) [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 1.31,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "Two examples of alternative criteria that do not approximate or bound the log-likelihood are score matching and noise-contrastive estimation (NCE) .",
+    "llm": "supported",
+    "nli": 0.9970609088083058
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q029",
+  "kind": "single",
+  "question": "What are some examples of language models with larger context windows?",
+  "answer": "Examples of language models with larger context windows include MPT-30B-Instruct, LongChat-13B (16K), OpenAI's GPT-3.5-Turbo, and Anthropic's Claude-1.3 [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 0.59,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "incorrect",
+  "claims": [
+   {
+    "text": "Examples of language models with larger context windows include MPT-30B-Instruct, LongChat-13B (16K), OpenAI's GPT-3.5-Turbo, and Anthropic's Claude-1.3 .",
+    "llm": "supported",
+    "nli": 0.9821741972187135
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q054",
+  "kind": "single",
+  "question": "On which three datasets were the ablation studies conducted?",
+  "answer": "The ablation studies were conducted on PopQA, PubHealth, and ASQA [1][2].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 0.8,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "The ablation studies were conducted on PopQA, PubHealth, and ASQA .",
+    "llm": "supported",
+    "nli": 0.9788954531601821
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q063",
+  "kind": "single",
+  "question": "What happens to the model quality when the attention key size is reduced?",
+  "answer": "When the attention key size is reduced, model quality is hurt [1][3].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 0.8,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "When the attention key size is reduced, model quality is hurt .",
+    "llm": "supported",
+    "nli": 0.9806326442015276
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q057",
+  "kind": "single",
+  "question": "How can a conditional generative model p(x | c) be obtained within the adversarial framework?",
+  "answer": "A conditional generative model $p(x | c)$ can be obtained by adding $c$ as an input to both $G$ and $D$ [1][2].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 1.38,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "A conditional generative model $p(x | c)$ can be obtained by adding $c$ as an input to both $G$ and $D$ .",
+    "llm": "supported",
+    "nli": 0.31719294628859773
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 0.0
+  }
+ },
+ {
+  "id": "q031",
+  "kind": "single",
+  "question": "What retrieval system is used to collect distractor documents for the NaturalQuestions dataset?",
+  "answer": "To collect distractor documents, a retrieval system (Contriever, fine-tuned on MS-MARCO) is used [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 0.88,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "To collect distractor documents, a retrieval system (Contriever, fine-tuned on MS-MARCO) is used .",
+    "llm": "supported",
+    "nli": 0.07001559280448624
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 0.0
+  }
+ },
+ {
+  "id": "q001",
+  "kind": "single",
+  "question": "What range of scores does ChatGPT assign to the three quality dimensions in the GPT Score method?",
+  "answer": "ChatGPT assigns a score between 0 and 10 for the three quality dimensions [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 0.93,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "ChatGPT assigns a score between 0 and 10 for the three quality dimensions .",
+    "llm": "supported",
+    "nli": 0.8214164644444953
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q040",
+  "kind": "single",
+  "question": "What is the name of the novel estimator introduced for efficient approximate inference with continuous latent variables?",
+  "answer": "The novel estimator introduced for efficient approximate inference with continuous latent variables is the Stochastic Gradient VB (SGVB) estimator [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 1.5,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "The novel estimator introduced for efficient approximate inference with continuous latent variables is the Stochastic Gradient VB (SGVB) estimator .",
+    "llm": "supported",
+    "nli": 0.9906901746787942
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q006",
+  "kind": "single",
+  "question": "How is the final faithfulness score F calculated?",
+  "answer": "The final faithfulness score, $F$, is computed as $F = \\frac{|V|}{|S|}$, where $|V|$ is the number of statements supported according to the LLM and $|S|$ is the total number of statements [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 1.07,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "The final faithfulness score, $F$, is computed as $F = \\frac{|V|}{|S|}$, where $|V|$ is the number of statements supported according to the LLM and $|S|$ is the total number of statements .",
+    "llm": "supported",
+    "nli": 0.11937944643835625
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 0.0
+  }
+ },
+ {
+  "id": "q008",
+  "kind": "single",
+  "question": "Who are the authors of the paper titled Auto-Encoding Variational Bayes?",
+  "answer": "The authors of the paper titled Auto-Encoding Variational Bayes are Diederik P. Kingma and Max Welling [2].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 1.12,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "Kingma and Max Welling .",
+    "llm": "supported",
+    "nli": 0.19254784370287936
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 0.0
+  }
+ },
+ {
+  "id": "q019",
+  "kind": "single",
+  "question": "What is the learning rate used for the BitFit method in the GPT-3 adaptation experiments?",
+  "answer": "Based on Table 12, the learning rate for BitFit is 5.00E-04 [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 1.08,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "Based on Table 12, the learning rate for BitFit is 5.00E-04 .",
+    "llm": "unsupported",
+    "nli": 0.4874834404860419
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q053",
+  "kind": "single",
+  "question": "In which two domains have retrieve-and-edit approaches proven successful?",
+  "answer": "Retrieve-and-edit approaches have proven successful in the domains of Machine Translation and Semantic Parsing [1][2].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 0.77,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "Retrieve-and-edit approaches have proven successful in the domains of Machine Translation and Semantic Parsing .",
+    "llm": "supported",
+    "nli": 0.9929112710005362
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q007",
+  "kind": "single",
+  "question": "What is the worst-case performance of GPT-3.5-Turbo on the key-value retrieval task without query-aware contextualization?",
+  "answer": "Without query-aware contextualization, the worst-case performance of GPT-3.5-Turbo (16K) on the key-value retrieval task is 45.6% [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 1.02,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "Without query-aware contextualization, the worst-case performance of GPT-3.5-Turbo (16K) on the key-value retrieval task is 45.6% .",
+    "llm": "supported",
+    "nli": 0.9725091358090721
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q069",
+  "kind": "single",
+  "question": "What is the observed performance drop of SBERT in the cross-topic evaluation?",
+  "answer": "In the cross-topic evaluation, SBERT experiences a performance drop of about 7 points in Spearman correlation [1][2].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 0.82,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "In the cross-topic evaluation, SBERT experiences a performance drop of about 7 points in Spearman correlation .",
+    "llm": "supported",
+    "nli": 0.9956389837698632
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q064",
+  "kind": "single",
+  "question": "Who directed the 1989 documentary film Adam Clayton Powell?",
+  "answer": "Richard Kilberg directed the 1989 documentary film Adam Clayton Powell [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 0.63,
+  "cites_gold": false,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "Richard Kilberg directed the 1989 documentary film Adam Clayton Powell .",
+    "llm": "supported",
+    "nli": 0.9971254814575473
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q059",
+  "kind": "single",
+  "question": "What is the prior over the latent variables in the Variational Auto-Encoder example?",
+  "answer": "In the Variational Auto-Encoder example, the prior over the latent variables is the centered isotropic multivariate Gaussian $p_\\theta(z) = \\mathcal{N}(z; 0, I)$ [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 0.64,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "In the Variational Auto-Encoder example, the prior over the latent variables is the centered isotropic multivariate Gaussian $p_\\theta(z) = \\mathcal{N}(z; 0, I)$ .",
+    "llm": "supported",
+    "nli": 0.9808894248316252
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q044",
+  "kind": "single",
+  "question": "What potential benefit do diffusion models offer regarding internet accessibility?",
+  "answer": "Diffusion models may be useful for data compression, which can ensure the accessibility of the internet to wide audiences as data becomes higher resolution and global internet traffic increases [1][4].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 0.73,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "Diffusion models may be useful for data compression, which can ensure the accessibility of the internet to wide audiences as data becomes higher resolution and global internet traffic increases .",
+    "llm": "supported",
+    "nli": 0.6984601232967497
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q032",
+  "kind": "single",
+  "question": "What is the effective batch size used for training?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 1.2,
+  "cites_gold": false,
+  "gold_in_context": false,
+  "correct": "refused"
+ },
+ {
+  "id": "q068",
+  "kind": "single",
+  "question": "How many questions per second does BM25/Lucene process per CPU thread?",
+  "answer": "BM25/Lucene processes 23.7 questions per second per CPU thread [1][2].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 0.6,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "BM25/Lucene processes 23.7 questions per second per CPU thread .",
+    "llm": "supported",
+    "nli": 0.006834824281093883
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 0.0
+  }
+ },
+ {
+  "id": "q021",
+  "kind": "single",
+  "question": "Which organization provided the computing resources used to train and evaluate the language models?",
+  "answer": "OpenAI's infrastructure and supercomputing teams made it possible to train models at this scale, and evaluations were run on OpenAI\u2019s infrastructure [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 0.7,
+  "cites_gold": false,
+  "gold_in_context": false,
+  "correct": "incorrect",
+  "claims": [
+   {
+    "text": "OpenAI's infrastructure and supercomputing teams made it possible to train models at this scale, and evaluations were run on OpenAI\u2019s infrastructure .",
+    "llm": "supported",
+    "nli": 0.0024328933322876303
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 0.0
+  }
+ },
+ {
+  "id": "q070",
+  "kind": "single",
+  "question": "What is the name of the framework presented for the automated assessment of retrieval-augmented systems?",
+  "answer": "The framework presented for the automated assessment of retrieval-augmented systems is called Ragas [1][2].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 1.33,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "The framework presented for the automated assessment of retrieval-augmented systems is called Ragas .",
+    "llm": "supported",
+    "nli": 0.996767239604482
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q026",
+  "kind": "single",
+  "question": "What criteria are used to filter out answer candidates for TriviaQA?",
+  "answer": "For TriviaQA, answer candidates are filtered out if they do not occur in the top 1000 documents for the query [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 0.66,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "For TriviaQA, answer candidates are filtered out if they do not occur in the top 1000 documents for the query .",
+    "llm": "supported",
+    "nli": 0.974333383124502
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q017",
+  "kind": "single",
+  "question": "How much CPU memory is required to store document index vectors for all of Wikipedia?",
+  "answer": "Storing document index vectors for all of Wikipedia requires approximately 100 GB of CPU memory, which can be reduced to 36GB by compressing the document index using FAISS's compression tools [1][2].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 0.72,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "Storing document index vectors for all of Wikipedia requires approximately 100 GB of CPU memory, which can be reduced to 36GB by compressing the document index using FAISS's compression tools .",
+    "llm": "supported",
+    "nli": 0.007837121321688671
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 0.0
+  }
+ },
+ {
+  "id": "q023",
+  "kind": "single",
+  "question": "What is the specific threshold value used to filter text pairs based on their semantic relation score?",
+  "answer": "The specific threshold value used to filter text pairs based on their semantic relation score is 0.43 [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 1.1,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "The specific threshold value used to filter text pairs based on their semantic relation score is 0.43 .",
+    "llm": "supported",
+    "nli": 0.9955264634358619
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q047",
+  "kind": "single",
+  "question": "Which Python function was used to perform the two-sample t-test for independent groups?",
+  "answer": "The two-sample t-test for independent groups was implemented using the `scipy.stats.ttest_ind` function in Python [1][2].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 0.78,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "The two-sample t-test for independent groups was implemented using the `scipy.stats.ttest_ind` function in Python .",
+    "llm": "supported",
+    "nli": 0.9922927031174986
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q025",
+  "kind": "single",
+  "question": "What does high effective robustness seem to result from according to the experiments?",
+  "answer": "According to the experiments, high effective robustness seems to result from minimizing the amount of distribution-specific training data a model has access to [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 0.7,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "According to the experiments, high effective robustness seems to result from minimizing the amount of distribution-specific training data a model has access to .",
+    "llm": "supported",
+    "nli": 0.9889602292300209
+   }
+  ],
+  "agreement": {
+   "n": 1,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q078",
+  "kind": "multi",
+  "question": "How do generative models and deep learning modules relate to the issue of bias in training data?",
+  "answer": "Deep learning modules and generative models tend to reproduce or exacerbate the biases that are already present in their training data [1, 2, 5]. Foundation models can amplify training data biases, extending trends seen in machine learning and deep learning models [2]. Furthermore, when samples from generative models trained on internet-collected datasets proliferate, these biases are reinforced further [5].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 3,
+  "seconds": 0.76,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "Deep learning modules and generative models tend to reproduce or exacerbate the biases that are already present in their training data .",
+    "llm": "supported",
+    "nli": 0.9231947581286415
+   },
+   {
+    "text": "Foundation models can amplify training data biases, extending trends seen in machine learning and deep learning models .",
+    "llm": "supported",
+    "nli": 0.9911203015296041
+   },
+   {
+    "text": "Furthermore, when samples from generative models trained on internet-collected datasets proliferate, these biases are reinforced further .",
+    "llm": "supported",
+    "nli": 0.9940064007422433
+   }
+  ],
+  "agreement": {
+   "n": 3,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q085",
+  "kind": "multi",
+  "question": "How do the parameter counts for prefix-layer tuning and the training data volumes for FLAN and T0 models compare in terms of their respective scaling factors?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 0.82,
+  "cites_gold": false,
+  "gold_in_context": true,
+  "correct": "refused"
+ },
+ {
+  "id": "q091",
+  "kind": "multi",
+  "question": "How do the similarity measures used in DPR and SBERT differ when evaluating retrieval or textual similarity performance?",
+  "answer": "DPR defines the similarity between a question and a passage using the dot product of their vectors [4]. In contrast, SBERT always uses cosine-similarity to compare the similarity between two sentence embeddings [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 0.84,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "DPR defines the similarity between a question and a passage using the dot product of their vectors .",
+    "llm": "supported",
+    "nli": 0.9766370433458755
+   },
+   {
+    "text": "In contrast, SBERT always uses cosine-similarity to compare the similarity between two sentence embeddings .",
+    "llm": "supported",
+    "nli": 0.13200523263686129
+   }
+  ],
+  "agreement": {
+   "n": 2,
+   "agree": 0.5
+  }
+ },
+ {
+  "id": "q100",
+  "kind": "multi",
+  "question": "How does the perspective on stakeholder inclusion in AI development differ between the argument for open model releases and the analysis of alignment processes?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 1.66,
+  "cites_gold": false,
+  "gold_in_context": true,
+  "correct": "refused"
+ },
+ {
+  "id": "q095",
+  "kind": "multi",
+  "question": "How do the NaturalQuestions and FEVER datasets differ in their reliance on Wikipedia for verifying or answering claims?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 1.54,
+  "cites_gold": false,
+  "gold_in_context": true,
+  "correct": "refused"
+ },
+ {
+  "id": "q102",
+  "kind": "multi",
+  "question": "How do structured representations like knowledge graphs and entity information contribute to the training or performance of machine learning models?",
+  "answer": "Structured, potentially graph-based representations can be combined with neural-based computation to retrieve information [4]. Additionally, augmented information such as entity information and extracted relation triples can help a model learn better task-related features, improve the correlation between a source and target, and enhance semantic understanding to alleviate divergence from the source [2].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 3.08,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "Structured, potentially graph-based representations can be combined with neural-based computation to retrieve information .",
+    "llm": "supported",
+    "nli": 0.08260420637897037
+   },
+   {
+    "text": "Additionally, augmented information such as entity information and extracted relation triples can help a model learn better task-related features, improve the correlation between a source and target, and enhance semantic understanding to alleviate divergence from the source .",
+    "llm": "supported",
+    "nli": 0.995743224896108
+   }
+  ],
+  "agreement": {
+   "n": 2,
+   "agree": 0.5
+  }
+ },
+ {
+  "id": "q082",
+  "kind": "multi",
+  "question": "How does the zero-shot approach to tool use in autonomous systems differ from methods that rely on providing specific examples of how to solve a task?",
+  "answer": "In contrast to prior work where models are provided with dataset-specific examples showing how a tool can be used to solve a concrete task, a zero-shot setup instructs models to solve tasks in natural language without any in-context examples [1]. The zero-shot setup is more challenging and is chosen when a user does not specify in advance which tools should be used in which way to solve a particular problem [1].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 1,
+  "seconds": 0.83,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "In contrast to prior work where models are provided with dataset-specific examples showing how a tool can be used to solve a concrete task, a zero-shot setup instructs models to solve tasks in natural language without any in-context examples .",
+    "llm": "supported",
+    "nli": 0.3599710562369942
+   },
+   {
+    "text": "The zero-shot setup is more challenging and is chosen when a user does not specify in advance which tools should be used in which way to solve a particular problem .",
+    "llm": "supported",
+    "nli": 0.9951325931612143
+   }
+  ],
+  "agreement": {
+   "n": 2,
+   "agree": 0.5
+  }
+ },
+ {
+  "id": "q094",
+  "kind": "multi",
+  "question": "How does the impact of increasing the number of retrieved documents on QA performance differ between GPT-3.5-Turbo and RAG models?",
+  "answer": "For RAG models, retrieving more documents at test time monotonically improves open-domain QA results for RAG-Sequence, while performance for RAG-Token peaks at 10 retrieved documents [1]. In contrast, for GPT-3.5-Turbo, reader model performance saturates long before retriever performance, and using more than 20 retrieved documents only marginally improves its performance (by ~1.5%) while significantly increasing input context length, latency, and cost [3]. Furthermore, GPT-3.5-Turbo's multi-document QA performance can drop by more than 20%, where performance in 20- and 30-document settings can even be lower than closed-book performance without any input documents [2].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 3,
+  "seconds": 1.25,
+  "cites_gold": true,
+  "gold_in_context": true,
+  "correct": "correct",
+  "claims": [
+   {
+    "text": "For RAG models, retrieving more documents at test time monotonically improves open-domain QA results for RAG-Sequence, while performance for RAG-Token peaks at 10 retrieved documents .",
+    "llm": "supported",
+    "nli": 0.9775163037430741
+   },
+   {
+    "text": "In contrast, for GPT-3.5-Turbo, reader model performance saturates long before retriever performance, and using more than 20 retrieved documents only marginally improves its performance (by ~1.5%) while significantly increasing input context length, latency, and cost .",
+    "llm": "supported",
+    "nli": 0.9948844673993253
+   },
+   {
+    "text": "Furthermore, GPT-3.5-Turbo's multi-document QA performance can drop by more than 20%, where performance in 20- and 30-document settings can even be lower than closed-book performance without any input documents .",
+    "llm": "supported",
+    "nli": 0.8222921642094351
+   }
+  ],
+  "agreement": {
+   "n": 3,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q098",
+  "kind": "multi",
+  "question": "How do the training data sources and evaluation methodologies differ between the BGE-pretrain model and SBERT?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 2.02,
+  "cites_gold": false,
+  "gold_in_context": true,
+  "correct": "refused"
+ },
+ {
+  "id": "q092",
+  "kind": "multi",
+  "question": "How do the reasoning approaches in chain of thought prompting and ReAct differ in their application to language models?",
+  "answer": "Chain-of-thought prompting generates a static black-box thought process using the model's internal representations without grounding in the external world [4]. In contrast, ReAct synergizes reasoning and acting, allowing an agent to interact with an environment to solve tasks [4][5].",
+  "refused": false,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 2,
+  "seconds": 0.8,
+  "cites_gold": false,
+  "gold_in_context": false,
+  "correct": "incorrect",
+  "claims": [
+   {
+    "text": "Chain-of-thought prompting generates a static black-box thought process using the model's internal representations without grounding in the external world .",
+    "llm": "supported",
+    "nli": 0.9951862304724624
+   },
+   {
+    "text": "In contrast, ReAct synergizes reasoning and acting, allowing an agent to interact with an environment to solve tasks .",
+    "llm": "supported",
+    "nli": 0.9860808234424457
+   }
+  ],
+  "agreement": {
+   "n": 2,
+   "agree": 1.0
+  }
+ },
+ {
+  "id": "q106",
+  "kind": "unanswerable",
+  "question": "What is the boiling point of ethanol in Celsius?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 1.17
+ },
+ {
+  "id": "q113",
+  "kind": "unanswerable",
+  "question": "Who founded DeepMind?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 2.04
+ },
+ {
+  "id": "q119",
+  "kind": "unanswerable",
+  "question": "How do I set up OAuth2 login in Django?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 2.07
+ },
+ {
+  "id": "q120",
+  "kind": "unanswerable",
+  "question": "What is the Fermi paradox?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 2.63
+ },
+ {
+  "id": "q122",
+  "kind": "unanswerable",
+  "question": "How is mRNA vaccine technology manufactured?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 2.24
+ },
+ {
+  "id": "q117",
+  "kind": "unanswerable",
+  "question": "What is the license of the Mistral 7B weights?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 2.25
+ },
+ {
+  "id": "q118",
+  "kind": "unanswerable",
+  "question": "What was the training dataset size of Stable Diffusion 3?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 3.8
+ },
+ {
+  "id": "q112",
+  "kind": "unanswerable",
+  "question": "How much did it cost to train Gemini Ultra?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 0.83
+ },
+ {
+  "id": "q115",
+  "kind": "unanswerable",
+  "question": "What topics does an undergraduate operating systems course cover?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 1.0
+ },
+ {
+  "id": "q111",
+  "kind": "unanswerable",
+  "question": "What is the context window of Gemini 1.5 Pro?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 1.77
+ },
+ {
+  "id": "q109",
+  "kind": "unanswerable",
+  "question": "How many players are on a cricket team?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 3.9
+ },
+ {
+  "id": "q121",
+  "kind": "unanswerable",
+  "question": "Which Indian state has the largest area?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 0.71
+ },
+ {
+  "id": "q110",
+  "kind": "unanswerable",
+  "question": "What is the current price of Bitcoin?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 1.57
+ },
+ {
+  "id": "q114",
+  "kind": "unanswerable",
+  "question": "What GPU memory is needed to fine-tune a 70B model with QLoRA on one card?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": false,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 1.78
+ },
+ {
+  "id": "q107",
+  "kind": "unanswerable",
+  "question": "Which programming language was used to write the Linux kernel?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 1.71
+ },
+ {
+  "id": "q116",
+  "kind": "unanswerable",
+  "question": "How does the Mamba state space model work?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 3.24
+ },
+ {
+  "id": "q104",
+  "kind": "unanswerable",
+  "question": "Who won the 2022 FIFA World Cup?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 3.21
+ },
+ {
+  "id": "q103",
+  "kind": "unanswerable",
+  "question": "What is the best recipe for a vegetarian lasagna?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 1.94
+ },
+ {
+  "id": "q105",
+  "kind": "unanswerable",
+  "question": "How do I deploy a Kubernetes pod with a persistent volume?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 3.78
+ },
+ {
+  "id": "q108",
+  "kind": "unanswerable",
+  "question": "What is the capital of Australia?",
+  "answer": "INSUFFICIENT_EVIDENCE",
+  "refused": true,
+  "gated": true,
+  "invalid_citations": 0,
+  "n_citations": 0,
+  "seconds": 0.97
+ }
+]

@@ -1,0 +1,532 @@
+{
+ "tuned to the generated questions": {
+  "gate": 1.32,
+  "rows": [
+   {
+    "id": "n01",
+    "kind": "answerable",
+    "question": "What is the Transformer's main building block?",
+    "refused": true,
+    "gated": true,
+    "top_score": -0.81,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n02",
+    "kind": "answerable",
+    "question": "How does a GAN work?",
+    "refused": true,
+    "gated": true,
+    "top_score": 0.82,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n03",
+    "kind": "answerable",
+    "question": "What is LoRA?",
+    "refused": false,
+    "gated": false,
+    "top_score": 3.93,
+    "invalid_citations": 0,
+    "answer": "LoRA is a method that allows training some dense layers in a neural network indirectly by optimizing rank decomposition matrices of the dense layers' change during adaptation, while keeping the pre-trained weights frozen [2]. It adds trainable pairs of rank decomposition matrices in parallel to exis"
+   },
+   {
+    "id": "n04",
+    "kind": "answerable",
+    "question": "Explain the ReAct framework.",
+    "refused": false,
+    "gated": false,
+    "top_score": 2.37,
+    "invalid_citations": 0,
+    "answer": "ReAct is a general paradigm that combines reasoning and acting with language models for solving diverse language reasoning and decision-making tasks [1]. It prompts language models to generate verbal reasoning traces and actions in an interleaved manner [1]. This enables the model to perform dynamic"
+   },
+   {
+    "id": "n05",
+    "kind": "answerable",
+    "question": "Why do language models hallucinate?",
+    "refused": false,
+    "gated": false,
+    "top_score": 6.61,
+    "invalid_citations": 0,
+    "answer": "Language models hallucinate because they prioritize their parametric knowledge over the provided input source, which can result in the generation of excess information in the output [3]. Additionally, large language models have inherent limitations\u2014such as an inability to access up-to-date informati"
+   },
+   {
+    "id": "n06",
+    "kind": "answerable",
+    "question": "What is chain of thought prompting?",
+    "refused": false,
+    "gated": false,
+    "top_score": 9.23,
+    "invalid_citations": 0,
+    "answer": "A chain of thought is a series of intermediate natural language reasoning steps that lead to the final output [2]."
+   },
+   {
+    "id": "n07",
+    "kind": "answerable",
+    "question": "What does BERT stand for?",
+    "refused": false,
+    "gated": false,
+    "top_score": 5.04,
+    "invalid_citations": 0,
+    "answer": "BERT stands for Bidirectional Encoder Representations from Transformers [1]."
+   },
+   {
+    "id": "n08",
+    "kind": "answerable",
+    "question": "How does latent diffusion save compute?",
+    "refused": true,
+    "gated": true,
+    "top_score": -1.34,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n09",
+    "kind": "answerable",
+    "question": "What is the difference between a VAE and a GAN?",
+    "refused": true,
+    "gated": true,
+    "top_score": -1.73,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n10",
+    "kind": "answerable",
+    "question": "What is Self-RAG?",
+    "refused": true,
+    "gated": true,
+    "top_score": 1.23,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n11",
+    "kind": "answerable",
+    "question": "How is CLIP trained?",
+    "refused": false,
+    "gated": false,
+    "top_score": 5.43,
+    "invalid_citations": 0,
+    "answer": "CLIP is trained using a simplified version of ConVIRT trained from scratch on a dataset of 400 million (image, text) pairs via natural language supervision at a large scale [1]."
+   },
+   {
+    "id": "n12",
+    "kind": "answerable",
+    "question": "What is RLHF?",
+    "refused": false,
+    "gated": false,
+    "top_score": 6.99,
+    "invalid_citations": 0,
+    "answer": "Reinforcement Learning with Human Feedback (RLHF) is a model training procedure applied to a fine-tuned language model to further align its behavior with human preferences and instruction following [1]. In this paradigm, models are fine-tuned based on feedback from human users to iteratively align t"
+   },
+   {
+    "id": "n13",
+    "kind": "answerable",
+    "question": "What is the lost in the middle problem?",
+    "refused": true,
+    "gated": true,
+    "top_score": 1.31,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n14",
+    "kind": "answerable",
+    "question": "What does RAGAS measure?",
+    "refused": false,
+    "gated": false,
+    "top_score": 1.91,
+    "invalid_citations": 0,
+    "answer": "Ragas measures different dimensions of Retrieval Augmented Generation (RAG) pipelines\u2014such as the retrieval system's ability to identify relevant context passages, the LLM's ability to exploit those passages faithfully, and overall generation quality\u2014using a suite of metrics that do not require grou"
+   },
+   {
+    "id": "n15",
+    "kind": "answerable",
+    "question": "What is dense passage retrieval?",
+    "refused": false,
+    "gated": false,
+    "top_score": 7.03,
+    "invalid_citations": 0,
+    "answer": "Dense Passage Retriever (DPR) is a retrieval component used in open-domain question answering that indexes all passages in a collection into a low-dimensional and continuous space, allowing it to efficiently retrieve the top passages relevant to an input question [1]. It uses a dense encoder $E_P(\\c"
+   },
+   {
+    "id": "n16",
+    "kind": "answerable",
+    "question": "How does Toolformer decide when to call a tool?",
+    "refused": false,
+    "gated": false,
+    "top_score": 4.92,
+    "invalid_citations": 0,
+    "answer": "Toolformer currently decides whether or not to make an API call without taking into account the tool-dependent computational cost incurred from making the call [1]. Additionally, models trained with Toolformer are often sensitive to the exact wording of their input when making this decision [2]."
+   },
+   {
+    "id": "n17",
+    "kind": "answerable",
+    "question": "What is the reparameterization trick?",
+    "refused": false,
+    "gated": false,
+    "top_score": 4.98,
+    "invalid_citations": 0,
+    "answer": "The reparameterization trick is a method where a continuous random variable $z$ drawn from a conditional distribution $q_\\phi(z|x)$ is expressed as a deterministic variable $z = g_\\phi(\\epsilon, x)$, where $\\epsilon$ is an auxiliary variable with an independent marginal $p(\\epsilon)$ [1]. This repar"
+   },
+   {
+    "id": "n18",
+    "kind": "answerable",
+    "question": "What is few-shot learning in GPT-3?",
+    "refused": false,
+    "gated": false,
+    "top_score": 7.78,
+    "invalid_citations": 0,
+    "answer": "Few-shot learning in GPT-3 involves providing a natural language task description and a number of demonstrations (examples) in the model's context, without using any gradient updates or fine-tuning [2]."
+   },
+   {
+    "id": "n19",
+    "kind": "answerable",
+    "question": "What are the risks of foundation models?",
+    "refused": false,
+    "gated": false,
+    "top_score": 7.87,
+    "invalid_citations": 0,
+    "answer": "The risks of foundation models include those related to their scale, emergent capabilities, and defects that are inherited by all downstream adapted models [3]. They can represent a single point of failure for various applications, meaning that issues like data poisoning attacks or adversarial examp"
+   },
+   {
+    "id": "n20",
+    "kind": "answerable",
+    "question": "What does the discriminator do in a GAN?",
+    "refused": false,
+    "gated": false,
+    "top_score": 1.81,
+    "invalid_citations": 0,
+    "answer": "In a GAN, the discriminator is one of two competing networks that can supervise one another from image collections alone [1]. It is trained to estimate the conditional probability $P(Y = y|x)$, where $Y$ indicates whether an example $x$ comes from the data distribution ($p_{data}$) or from the gener"
+   },
+   {
+    "id": "n21",
+    "kind": "unanswerable",
+    "question": "What is reciprocal rank fusion?",
+    "refused": true,
+    "gated": true,
+    "top_score": -8.53,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n22",
+    "kind": "unanswerable",
+    "question": "What is the capital of France?",
+    "refused": true,
+    "gated": false,
+    "top_score": 2.23,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n23",
+    "kind": "unanswerable",
+    "question": "Who won the cricket world cup?",
+    "refused": true,
+    "gated": true,
+    "top_score": -6.9,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n24",
+    "kind": "unanswerable",
+    "question": "How do I cook rice?",
+    "refused": true,
+    "gated": true,
+    "top_score": 0.03,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n25",
+    "kind": "unanswerable",
+    "question": "What is the weather today?",
+    "refused": true,
+    "gated": true,
+    "top_score": -6.91,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n26",
+    "kind": "unanswerable",
+    "question": "Who invented the telephone?",
+    "refused": true,
+    "gated": true,
+    "top_score": -8.69,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   }
+  ]
+ },
+ "conservative (default)": {
+  "gate": -3.0,
+  "rows": [
+   {
+    "id": "n01",
+    "kind": "answerable",
+    "question": "What is the Transformer's main building block?",
+    "refused": true,
+    "gated": false,
+    "top_score": -0.81,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n02",
+    "kind": "answerable",
+    "question": "How does a GAN work?",
+    "refused": false,
+    "gated": false,
+    "top_score": 0.82,
+    "invalid_citations": 0,
+    "answer": "GANs generate visual content of high fidelity, realism, and diversity by featuring two competing networks: a generator and a discriminator that supervise one another from image collections alone [2]."
+   },
+   {
+    "id": "n03",
+    "kind": "answerable",
+    "question": "What is LoRA?",
+    "refused": false,
+    "gated": false,
+    "top_score": 3.93,
+    "invalid_citations": 0,
+    "answer": "LoRA is a method that allows training some dense layers in a neural network indirectly by optimizing rank decomposition matrices of the dense layers' change during adaptation, while keeping the pre-trained weights frozen [2]. It adds trainable pairs of rank decomposition matrices in parallel to exis"
+   },
+   {
+    "id": "n04",
+    "kind": "answerable",
+    "question": "Explain the ReAct framework.",
+    "refused": false,
+    "gated": false,
+    "top_score": 2.37,
+    "invalid_citations": 0,
+    "answer": "ReAct is a general paradigm that combines reasoning and acting with language models for solving diverse language reasoning and decision-making tasks [1]. It prompts language models to generate verbal reasoning traces and actions in an interleaved manner [1]. This enables the model to perform dynamic"
+   },
+   {
+    "id": "n05",
+    "kind": "answerable",
+    "question": "Why do language models hallucinate?",
+    "refused": false,
+    "gated": false,
+    "top_score": 6.61,
+    "invalid_citations": 0,
+    "answer": "Language models hallucinate because they prioritize their parametric knowledge over the provided input source, which can result in the generation of excess information in the output [3]. Additionally, large language models have inherent limitations\u2014such as an inability to access up-to-date informati"
+   },
+   {
+    "id": "n06",
+    "kind": "answerable",
+    "question": "What is chain of thought prompting?",
+    "refused": false,
+    "gated": false,
+    "top_score": 9.23,
+    "invalid_citations": 0,
+    "answer": "A chain of thought is a series of intermediate natural language reasoning steps that lead to the final output [2]."
+   },
+   {
+    "id": "n07",
+    "kind": "answerable",
+    "question": "What does BERT stand for?",
+    "refused": false,
+    "gated": false,
+    "top_score": 5.04,
+    "invalid_citations": 0,
+    "answer": "BERT stands for Bidirectional Encoder Representations from Transformers [1]."
+   },
+   {
+    "id": "n08",
+    "kind": "answerable",
+    "question": "How does latent diffusion save compute?",
+    "refused": false,
+    "gated": false,
+    "top_score": -1.34,
+    "invalid_citations": 0,
+    "answer": "Latent diffusion models reduce computational demands by introducing a separate mild compression stage that eliminates imperceptible high-frequency details, preventing the network from needing to evaluate gradients and the neural backbone on all pixels [2]."
+   },
+   {
+    "id": "n09",
+    "kind": "answerable",
+    "question": "What is the difference between a VAE and a GAN?",
+    "refused": true,
+    "gated": false,
+    "top_score": -1.73,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n10",
+    "kind": "answerable",
+    "question": "What is Self-RAG?",
+    "refused": false,
+    "gated": false,
+    "top_score": 1.23,
+    "invalid_citations": 0,
+    "answer": "Self-RAG (Self-Reflective Retrieval-Augmented Generation) is a framework designed to enhance a language model's quality and factuality through retrieval and self-reflection [5]. Unlike standard RAG approaches that indiscriminately retrieve and incorporate a fixed number of passages, Self-RAG enables"
+   },
+   {
+    "id": "n11",
+    "kind": "answerable",
+    "question": "How is CLIP trained?",
+    "refused": false,
+    "gated": false,
+    "top_score": 5.43,
+    "invalid_citations": 0,
+    "answer": "CLIP is trained using a simplified version of ConVIRT trained from scratch on a dataset of 400 million (image, text) pairs via natural language supervision at a large scale [1]."
+   },
+   {
+    "id": "n12",
+    "kind": "answerable",
+    "question": "What is RLHF?",
+    "refused": false,
+    "gated": false,
+    "top_score": 6.99,
+    "invalid_citations": 0,
+    "answer": "Reinforcement Learning with Human Feedback (RLHF) is a model training procedure applied to a fine-tuned language model to further align its behavior with human preferences and instruction following [1]. In this paradigm, models are fine-tuned based on feedback from human users to iteratively align t"
+   },
+   {
+    "id": "n13",
+    "kind": "answerable",
+    "question": "What is the lost in the middle problem?",
+    "refused": false,
+    "gated": false,
+    "top_score": 1.31,
+    "invalid_citations": 0,
+    "answer": "The \"lost in the middle\" problem refers to the phenomenon where language model performance degrades significantly when models need to access relevant information located in the middle of long input contexts, as performance is typically highest when the information is at the beginning or end of the c"
+   },
+   {
+    "id": "n14",
+    "kind": "answerable",
+    "question": "What does RAGAS measure?",
+    "refused": false,
+    "gated": false,
+    "top_score": 1.91,
+    "invalid_citations": 0,
+    "answer": "Ragas measures different dimensions of Retrieval Augmented Generation (RAG) pipelines\u2014such as the retrieval system's ability to identify relevant context passages, the LLM's ability to exploit those passages faithfully, and overall generation quality\u2014using a suite of metrics that do not require grou"
+   },
+   {
+    "id": "n15",
+    "kind": "answerable",
+    "question": "What is dense passage retrieval?",
+    "refused": false,
+    "gated": false,
+    "top_score": 7.03,
+    "invalid_citations": 0,
+    "answer": "Dense Passage Retriever (DPR) is a retrieval component used in open-domain question answering that indexes all passages in a collection into a low-dimensional and continuous space, allowing it to efficiently retrieve the top passages relevant to an input question [1]. It uses a dense encoder $E_P(\\c"
+   },
+   {
+    "id": "n16",
+    "kind": "answerable",
+    "question": "How does Toolformer decide when to call a tool?",
+    "refused": false,
+    "gated": false,
+    "top_score": 4.92,
+    "invalid_citations": 0,
+    "answer": "Toolformer currently decides whether or not to make an API call without taking into account the tool-dependent computational cost incurred from making the call [1]. Additionally, models trained with Toolformer are often sensitive to the exact wording of their input when making this decision [2]."
+   },
+   {
+    "id": "n17",
+    "kind": "answerable",
+    "question": "What is the reparameterization trick?",
+    "refused": false,
+    "gated": false,
+    "top_score": 4.98,
+    "invalid_citations": 0,
+    "answer": "The reparameterization trick is a method where a continuous random variable $z$ drawn from a conditional distribution $q_\\phi(z|x)$ is expressed as a deterministic variable $z = g_\\phi(\\epsilon, x)$, where $\\epsilon$ is an auxiliary variable with an independent marginal $p(\\epsilon)$ [1]. This repar"
+   },
+   {
+    "id": "n18",
+    "kind": "answerable",
+    "question": "What is few-shot learning in GPT-3?",
+    "refused": false,
+    "gated": false,
+    "top_score": 7.78,
+    "invalid_citations": 0,
+    "answer": "Few-shot learning in GPT-3 involves providing a natural language task description and a number of demonstrations (examples) in the model's context, without using any gradient updates or fine-tuning [2]."
+   },
+   {
+    "id": "n19",
+    "kind": "answerable",
+    "question": "What are the risks of foundation models?",
+    "refused": false,
+    "gated": false,
+    "top_score": 7.87,
+    "invalid_citations": 0,
+    "answer": "The risks of foundation models include those related to their scale, emergent capabilities, and defects that are inherited by all downstream adapted models [3]. They can represent a single point of failure for various applications, meaning that issues like data poisoning attacks or adversarial examp"
+   },
+   {
+    "id": "n20",
+    "kind": "answerable",
+    "question": "What does the discriminator do in a GAN?",
+    "refused": false,
+    "gated": false,
+    "top_score": 1.81,
+    "invalid_citations": 0,
+    "answer": "In a GAN, the discriminator is one of two competing networks that can supervise one another from image collections alone [1]. It is trained to estimate the conditional probability $P(Y = y|x)$, where $Y$ indicates whether an example $x$ comes from the data distribution ($p_{data}$) or from the gener"
+   },
+   {
+    "id": "n21",
+    "kind": "unanswerable",
+    "question": "What is reciprocal rank fusion?",
+    "refused": true,
+    "gated": true,
+    "top_score": -8.53,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n22",
+    "kind": "unanswerable",
+    "question": "What is the capital of France?",
+    "refused": true,
+    "gated": false,
+    "top_score": 2.23,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n23",
+    "kind": "unanswerable",
+    "question": "Who won the cricket world cup?",
+    "refused": true,
+    "gated": true,
+    "top_score": -6.9,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n24",
+    "kind": "unanswerable",
+    "question": "How do I cook rice?",
+    "refused": true,
+    "gated": false,
+    "top_score": 0.03,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n25",
+    "kind": "unanswerable",
+    "question": "What is the weather today?",
+    "refused": true,
+    "gated": true,
+    "top_score": -6.91,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   },
+   {
+    "id": "n26",
+    "kind": "unanswerable",
+    "question": "Who invented the telephone?",
+    "refused": true,
+    "gated": true,
+    "top_score": -8.69,
+    "invalid_citations": 0,
+    "answer": "INSUFFICIENT_EVIDENCE"
+   }
+  ]
+ }
+}
